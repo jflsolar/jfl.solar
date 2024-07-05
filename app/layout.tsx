@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'PV System Solutions for Residential, Industrial & Commercial',
     description: 'Inquire now!',
-    images: ['/bg1.jpg']
+    images: ['/bg-1.jpg']
   }
 };
 
