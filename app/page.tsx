@@ -5,6 +5,7 @@ import { BrandFacebook, Mail, Phone } from "tabler-icons-react";
 export default function Home() {
 
   return (
+  <>
     <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-white bg-top bg-cover"
       style={{backgroundImage: `url('/bg.jpg')`}}
     >
@@ -25,5 +26,6 @@ export default function Home() {
           
       </div>
     </main>
+    </>
   );
 }
