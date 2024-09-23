@@ -25,8 +25,8 @@ const TeamMember = ({ data }: Props) => {
         <h4 className="text-2xl max-sm:text-xl">{name}</h4>
         <span className="text-base">{position}</span>
       </div>
-      <div className="h-0.5 bg-brand-yellow w-[150px]" />
-      <p className="text-sm max-w-[250px]">{description}</p>
+      <div className="h-0.5 w-[150px] bg-brand-yellow" />
+      <p className="max-w-[250px] text-sm">{description}</p>
     </div>
   );
 };

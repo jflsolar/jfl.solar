@@ -8,8 +8,8 @@ import { useRouter } from "next/navigation";
 const Packages = () => {
   const router = useRouter();
   return (
-    <div className="relative w-full min-h-[95vh] h-full overflow-hidden">
-      <div className="absolute w-[50%] h-full left-0 top-0 flex items-center justify-center max-sm:hidden">
+    <div className="relative size-full min-h-[95vh] overflow-hidden">
+      <div className="absolute left-0 top-0 flex h-full w-1/2 items-center justify-center max-sm:hidden">
         <Image
           src={"/package-main.png"}
           width={500}
@@ -18,26 +18,26 @@ const Packages = () => {
           className="object-contain"
         />
       </div>
-      <div className="absolute w-full sm:w-[50%] h-full right-0 top-0 z-0">
+      <div className="absolute right-0 top-0 z-0 size-full sm:w-1/2">
         <Image
           src={"/home-package-bg.png"}
           width={720}
           height={700}
           alt="cover"
-          className="object-cover w-full h-full"
+          className="size-full object-cover"
         />
       </div>
-      <div className="absolute w-full sm:w-[50%] right-0 top-0 bottom-0 z-[5]">
-        <div className="w-full h-full bg-brand-blue/90" />
+      <div className="absolute inset-y-0 right-0 z-[5] w-full sm:w-1/2">
+        <div className="size-full bg-brand-blue/90" />
       </div>
-      <div className="max-w-7xl mx-auto relative z-10">
-        <div className="max-sm:text-center max-sm:items-center sm:max-w-[50%] max-w-full xl:max-w-[640px] ml-auto flex flex-col gap-8 py-40 lg:px-20 px-12 max-sm:py-20 max-[450px]:px-4">
+      <div className="relative z-10 mx-auto max-w-7xl">
+        <div className="ml-auto flex max-w-full flex-col gap-8 px-12 py-40 max-sm:items-center max-sm:py-20 max-sm:text-center max-[450px]:px-4 sm:max-w-[50%] lg:px-20 xl:max-w-screen-sm">
           <Image
             src={"/package-main.png"}
             width={250}
             height={250}
             alt="cover"
-            className="object-contain max-sm:flex hidden"
+            className="hidden object-contain max-sm:flex"
           />
           <h2 className="title-bold">
             Tailored{" "}
@@ -48,7 +48,7 @@ const Packages = () => {
             At JFL Solar, we know every project is unique, whether it’s a home,
             business, or industrial site.
           </p>
-          <p className="text-base lg:text-lg 3xl:text-2xl text-slate-100">
+          <p className="text-base text-slate-100 lg:text-lg 3xl:text-2xl">
             That’s why we offer tailored Solar PV packages to meet the specific
             needs of our clients, ensuring efficiency, reliability, and savings
             for every project size.

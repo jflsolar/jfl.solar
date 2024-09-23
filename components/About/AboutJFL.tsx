@@ -14,7 +14,7 @@ const AboutJFL = () => {
         />
       </div>
 
-      <div className="max-w-7xl mx-auto">
+      <div className="mx-auto max-w-7xl">
         <div className="section-text-container ml-auto">
           <h2 className="title-bold-light">
             WHO IS <span className="text-brand-yellow">JFL SOLAR</span>?

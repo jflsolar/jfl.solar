@@ -23,8 +23,8 @@ import React from 'react';
 
 const Brand = () => {
   return (
-    <div className='bg-white w-full px-8 shadow max-[450px]:px-4'>
-      <div className='w-full max-w-7xl flex flex-wrap items-center justify-center md:justify-evenly mx-auto py-10 gap-8 md:gap-4'>
+    <div className='w-full bg-white px-8 shadow max-[450px]:px-4'>
+      <div className='mx-auto flex w-full max-w-7xl flex-wrap items-center justify-center gap-8 py-10 md:justify-evenly md:gap-4'>
         <Image
           src={'/brand-deye.png'}
           alt='deye'

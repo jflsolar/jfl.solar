@@ -18,7 +18,7 @@ const Services = () => {
           className="section-image"
         />
       </div>
-      <div className="max-w-7xl mx-auto">
+      <div className="mx-auto max-w-7xl">
         <div className="section-text-container-reverse">
           <h2 className="title-bold">
             Comprehensive{" "}

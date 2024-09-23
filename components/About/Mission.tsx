@@ -4,8 +4,8 @@ import React from "react";
 const Mission = () => {
   return (
     <div className="relative w-full">
-      <div className="max-w-7xl mx-auto py-40 max-sm:py-20 z-[20] bg-white/0 relative max-lg:px-8">
-        <div className="max-w-[700px] ml-auto text-right flex flex-col items-end w-full gap-4">
+      <div className="relative z-20 mx-auto max-w-7xl bg-white/0 py-40 max-lg:px-8 max-sm:py-20">
+        <div className="ml-auto flex w-full max-w-[700px] flex-col items-end gap-4 text-right">
           <h2 className="title-bold">
             OUR <span className="text-brand-yellow">MISSION</span>
           </h2>
@@ -17,14 +17,14 @@ const Mission = () => {
           </p>
         </div>
       </div>
-      <div className="absolute w-full h-full top-0">
-        <div className="lg:bg-mission-gradient-50 absolute top-0 z-10 right-0 w-full h-full max-lg:bg-brand-blue/90" />
+      <div className="absolute top-0 size-full">
+        <div className="absolute right-0 top-0 z-10 size-full max-lg:bg-brand-blue/90 lg:bg-mission-gradient-50" />
         <Image
           src={"/about-jfl.png"}
           width={720}
           height={700}
           alt="cover"
-          className="absolute z-0 top-0 left-0 object-cover lg:w-[50%] w-full h-full"
+          className="absolute left-0 top-0 z-0 size-full object-cover lg:w-1/2"
         />
       </div>
     </div>

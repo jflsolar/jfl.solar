@@ -72,7 +72,7 @@ const ContactUs = () => {
         />
       </div>
 
-      <div className="max-w-7xl mx-auto">
+      <div className="mx-auto max-w-7xl">
         <div className="section-text-container ml-auto">
           <h2 className="title-bold-light">
             GET IN <span className="text-brand-yellow">TOUCH</span>
@@ -81,7 +81,7 @@ const ContactUs = () => {
             {/* Phone */}
             <li className="flex items-center gap-2">
               <div
-                className={`p-1 size-10 flex items-center justify-center rounded-md shrink-0 cursor-pointer ${copied.phone ? "bg-[#1abc9c]" : hovered.phone ? "bg-[#576e8d]" : "bg-[#445974]"}`}
+                className={`flex size-10 shrink-0 cursor-pointer items-center justify-center rounded-md p-1 ${copied.phone ? "bg-[#1abc9c]" : hovered.phone ? "bg-[#576e8d]" : "bg-[#445974]"}`}
                 onClick={() => copyToClipboard(CONTACT_NUMBER, "phone")}
                 onMouseEnter={() => handleMouseEnter("phone")}
                 onMouseLeave={() => handleMouseLeave("phone")}
@@ -99,7 +99,7 @@ const ContactUs = () => {
             {/* Mail */}
             <li className="flex items-center gap-2">
               <div
-                className={`p-1 size-10 flex items-center justify-center rounded-md shrink-0 cursor-pointer ${copied.mail ? "bg-[#1abc9c]" : hovered.mail ? "bg-[#576e8d]" : "bg-[#445974]"}`}
+                className={`flex size-10 shrink-0 cursor-pointer items-center justify-center rounded-md p-1 ${copied.mail ? "bg-[#1abc9c]" : hovered.mail ? "bg-[#576e8d]" : "bg-[#445974]"}`}
                 onClick={() => copyToClipboard(EMAIL_ADDRESS, "mail")}
                 onMouseEnter={() => handleMouseEnter("mail")}
                 onMouseLeave={() => handleMouseLeave("mail")}
@@ -118,7 +118,7 @@ const ContactUs = () => {
 
             <li className="flex items-center gap-2">
               <div
-                className={`p-1 size-10 flex items-center justify-center rounded-md shrink-0 cursor-pointer ${copied.location ? "bg-[#1abc9c]" : hovered.location ? "bg-[#576e8d]" : "bg-[#445974]"}`}
+                className={`flex size-10 shrink-0 cursor-pointer items-center justify-center rounded-md p-1 ${copied.location ? "bg-[#1abc9c]" : hovered.location ? "bg-[#576e8d]" : "bg-[#445974]"}`}
                 onClick={() => copyToClipboard(OFFICE_ADDRESS, "location")}
                 onMouseEnter={() => handleMouseEnter("location")}
                 onMouseLeave={() => handleMouseLeave("location")}
@@ -142,7 +142,7 @@ const ContactUs = () => {
                   size={32}
                   fill="white"
                   stroke="none"
-                  className="bg-[#445974] p-1 rounded-md"
+                  className="rounded-md bg-[#445974] p-1"
                 />
               </a>
               <a href="https://www.instagram.com" target="_blank">
@@ -150,7 +150,7 @@ const ContactUs = () => {
                   size={32}
                   fill="white"
                   stroke="#445974"
-                  className="bg-[#445974] p-1 rounded-md"
+                  className="rounded-md bg-[#445974] p-1"
                 />
               </a>
               <a href="https://www.youtube.com/@JFLegaspi" target="_blank">
@@ -158,7 +158,7 @@ const ContactUs = () => {
                   size={32}
                   fill="white"
                   stroke="#445974"
-                  className="bg-[#445974] p-1 rounded-md"
+                  className="rounded-md bg-[#445974] p-1"
                 />
               </a>
             </div>

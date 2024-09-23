@@ -20,7 +20,7 @@ const PackageCard = ({ data }: Props) => {
   const { imageUrl, title, description, price, buttonText, redirectLink } =
     data;
   return (
-    <div className="flex flex-col items-center max-w-[320px] p-4 gap-4">
+    <div className="flex max-w-[320px] flex-col items-center gap-4 p-4">
       {imageUrl && (
         <Image
           src={imageUrl}
@@ -31,7 +31,7 @@ const PackageCard = ({ data }: Props) => {
         />
       )}
       {title && (
-        <h4 className="text-brand-blue text-xl max-sm:text-lg lg:text-2xl font-bold">
+        <h4 className="text-xl font-bold text-brand-blue max-sm:text-lg lg:text-2xl">
           {title}
         </h4>
       )}
@@ -39,7 +39,7 @@ const PackageCard = ({ data }: Props) => {
         <p className="text-center max-sm:text-sm">{description}</p>
       )}
       {price && (
-        <span className="text-center font-bold text-brand-blue max-sm:text-base text-lg 2xl:text-xl">
+        <span className="text-center text-lg font-bold text-brand-blue max-sm:text-base 2xl:text-xl">
           {price}
         </span>
       )}
