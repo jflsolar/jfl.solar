@@ -4,7 +4,6 @@ import console from "console";
 import React from "react";
 
 const ResidentialPackages = () => {
-  console.log("test");
   return (
     <div className="flex w-full flex-col gap-16 bg-white">
       <HybridPackages />
