@@ -50,12 +50,12 @@ const ServiceForm = () => {
 
   return (
     <div className="w-full bg-brand-blue px-8">
-      <div className="max-w-[520px] mx-auto py-32 ">
-        <div className="flex gap-8 flex-col items-center text-center">
-          <h2 className="uppercase text-2xl max-[450px]:text-xl md:text-3xl lg:text-4xl font-bold text-brand-yellow">
+      <div className="mx-auto max-w-[520px] py-32 ">
+        <div className="flex flex-col items-center gap-8 text-center">
+          <h2 className="text-2xl font-bold uppercase text-brand-yellow max-[450px]:text-xl md:text-3xl lg:text-4xl">
             READY TO AVAIL OUR SERVICES?
           </h2>
-          <p className="md:text-xl text-base max-[450px]:text-sm text-slate-50">
+          <p className="text-base text-slate-50 max-[450px]:text-sm md:text-xl">
             Fill out the form, and our team will get in touch to assist you with
             the service you need.
           </p>
@@ -71,7 +71,7 @@ const ServiceForm = () => {
                   <FormItem className="flex w-full flex-col items-start">
                     <FormControl>
                       <Input
-                        className="no-focus paragraph-regular bg-white max-[450px]:text-sm max-sm:text-base text-lg text-brand-blue min-h-12 2xl:min-h-[56px] border"
+                        className="min-h-12 border bg-white text-lg text-brand-blue max-sm:text-base max-[450px]:text-sm 2xl:min-h-[56px]"
                         placeholder="Your Name"
                         required
                         {...field}
@@ -88,7 +88,7 @@ const ServiceForm = () => {
                   <FormItem className="flex w-full flex-col items-start">
                     <FormControl>
                       <Input
-                        className="no-focus paragraph-regular bg-white max-[450px]:text-sm max-sm:text-base text-lg text-brand-blue min-h-12 2xl:min-h-[56px] border"
+                        className="min-h-12 border bg-white text-lg text-brand-blue max-sm:text-base max-[450px]:text-sm 2xl:min-h-[56px]"
                         placeholder="Your Email Address"
                         type="email"
                         required
@@ -106,7 +106,7 @@ const ServiceForm = () => {
                   <FormItem className="flex w-full flex-col items-start">
                     <FormControl>
                       <Input
-                        className="no-focus paragraph-regular bg-white max-[450px]:text-sm max-sm:text-base text-lg text-brand-blue min-h-12 2xl:min-h-[56px] border"
+                        className="min-h-12 border bg-white text-lg text-brand-blue max-sm:text-base max-[450px]:text-sm 2xl:min-h-[56px]"
                         placeholder="Your Contact Number"
                         required
                         {...field}
@@ -123,7 +123,7 @@ const ServiceForm = () => {
                   <FormItem className="flex w-full flex-col items-start">
                     <FormControl>
                       <Input
-                        className="no-focus paragraph-regular bg-white max-[450px]:text-sm max-sm:text-base text-lg text-brand-blue min-h-12 2xl:min-h-[56px] border"
+                        className="min-h-12 border bg-white text-lg text-brand-blue max-sm:text-base max-[450px]:text-sm 2xl:min-h-[56px]"
                         placeholder="Services Required"
                         required
                         {...field}
@@ -140,7 +140,7 @@ const ServiceForm = () => {
                   <FormItem className="flex w-full flex-col items-start">
                     <FormControl>
                       <Textarea
-                        className="no-focus paragraph-regular bg-white max-[450px]:text-sm max-sm:text-base text-lg text-brand-blue min-h-24 border"
+                        className="min-h-24 border bg-white text-lg text-brand-blue max-sm:text-base max-[450px]:text-sm"
                         placeholder="Message"
                         required
                         {...field}

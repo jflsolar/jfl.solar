@@ -1,6 +1,6 @@
-interface LoadProfile { 
-    name: string; 
-    quantity: number; 
-    hoursPerDay: number; 
-    powerRating: number 
+export interface LoadProfile {
+  name: string;
+  quantity: number;
+  hoursPerDay: number;
+  powerRating: number;
 }
