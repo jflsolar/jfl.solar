@@ -11,7 +11,7 @@ interface Props {
 const FeatureCard = ({ data }: Props) => {
   const { icon: IconComponent, title, description } = data;
   return (
-    <div className="flex min-w-[320px] max-w-[320px] flex-col items-center gap-4 p-4 text-center max-sm:max-w-full lg:max-w-[400px]">
+    <div className="flex min-w-[320px] max-w-[320px] flex-col items-center gap-4 p-4 text-center max-sm:min-w-full max-sm:max-w-full max-[350px]:p-2 lg:max-w-[400px]">
       {IconComponent && (
         <IconComponent
           size={60}

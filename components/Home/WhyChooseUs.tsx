@@ -5,7 +5,7 @@ import FeatureCard from "../Cards/FeatureCard";
 const WhyChooseUs = () => {
   return (
     <div className="flex w-full flex-col gap-16 bg-white py-40 max-sm:py-20">
-      <div className="mx-auto flex w-full max-w-7xl flex-col items-center gap-12 tracking-[0.0652em] max-sm:px-8 max-sm:text-center">
+      <div className="mx-auto flex w-full max-w-7xl flex-col items-center gap-12 tracking-[0.0652em] max-sm:px-8 max-sm:text-center max-[350px]:px-2">
         <h2 className="text-2xl font-bold uppercase tracking-[0.0625em] text-brand-blue md:text-3xl lg:text-4xl 3xl:text-5xl">
           <span className="text-brand-yellow">Why</span> Choose Us?
         </h2>
