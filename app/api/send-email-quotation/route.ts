@@ -1,11 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
 
-interface ContactFormData {
+interface QuotationFormData {
   name: string;
   email: string;
   contactNumber: string;
-  subject: string;
-  description: string;
+  systemType: string;
+  systemSize: string;
+  averageMonthlyBill: string;
 }
 
 export async function POST(req: NextRequest): Promise<NextResponse> {
@@ -14,21 +15,23 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
       name,
       email,
       contactNumber,
-      subject,
-      description,
-    }: ContactFormData = await req.json();
+      systemType,
+      systemSize,
+      averageMonthlyBill,
+    }: QuotationFormData = await req.json();
 
     const data = {
       sender: { email: "info@jflsolar.com", name: "JFL Solar" },
       to: [{ email: "jflsolarjay@gmail.com", name: "Jay" }],
-      subject: "New Contact Form Submission",
+      subject: "New Quotation Request",
       htmlContent: `
-        <h1>New Contact Form Submission</h1>
+        <h1>New Quotation Request</h1>
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Contact Number:</strong> ${contactNumber}</p>
-        <p><strong>Subject:</strong> ${subject}</p>
-        <p><strong>Message:</strong> ${description}</p>
+        <p><strong>System Type:</strong> ${systemType}</p>
+        <p><strong>System Size:</strong> ${systemSize} (kWh)</p>
+        <p><strong>Ave. Monthly Bill:</strong> ${averageMonthlyBill}</p>
       `,
     };
 

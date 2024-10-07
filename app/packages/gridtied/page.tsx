@@ -1,4 +1,4 @@
-import GridTiedPackages from "@/components/Packages/HybridPackages";
+import GridTiedPackages from "@/components/Packages/GridTiedPackages";
 import React from "react";
 
 const Packages = () => {

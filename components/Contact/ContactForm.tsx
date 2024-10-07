@@ -12,6 +12,7 @@ import CustomButton from "../CustomButton";
 
 const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
 
   const form = useForm<z.infer<typeof ContactSchema>>({
     resolver: zodResolver(ContactSchema),
@@ -36,7 +37,7 @@ const ContactForm = () => {
       });
 
       if (response.ok) {
-        alert("Message sent successfully!");
+        setSubmitted(true);
       } else {
         alert("Failed to send message.");
       }
@@ -59,110 +60,117 @@ const ContactForm = () => {
             Have a question or need assistance? Fill out the form, and we’ll get
             back to you shortly.
           </p>
-          <Form {...form}>
-            <form
-              onSubmit={form.handleSubmit(onSubmit)}
-              className="flex w-full max-w-2xl flex-col items-start gap-2"
-            >
-              <FormField
-                control={form.control}
-                name="name"
-                render={({ field }) => (
-                  <FormItem className="flex w-full flex-col items-start">
-                    <FormControl>
-                      <Input
-                        className="min-h-12 border bg-white text-lg text-brand-blue max-sm:text-base max-[450px]:text-sm 2xl:min-h-[56px]"
-                        placeholder="Your Name"
-                        required
-                        {...field}
-                        disabled={isSubmitting}
-                      />
-                    </FormControl>
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="email"
-                render={({ field }) => (
-                  <FormItem className="flex w-full flex-col items-start">
-                    <FormControl>
-                      <Input
-                        className="min-h-12 border bg-white text-lg text-brand-blue max-sm:text-base max-[450px]:text-sm 2xl:min-h-[56px]"
-                        placeholder="Your Email Address"
-                        type="email"
-                        required
-                        {...field}
-                        disabled={isSubmitting}
-                      />
-                    </FormControl>
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="contactNumber"
-                render={({ field }) => (
-                  <FormItem className="flex w-full flex-col items-start">
-                    <FormControl>
-                      <Input
-                        className="min-h-12 border bg-white text-lg text-brand-blue max-sm:text-base max-[450px]:text-sm 2xl:min-h-[56px]"
-                        placeholder="Your Contact Number"
-                        required
-                        {...field}
-                        disabled={isSubmitting}
-                      />
-                    </FormControl>
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="subject"
-                render={({ field }) => (
-                  <FormItem className="flex w-full flex-col items-start">
-                    <FormControl>
-                      <Input
-                        className="min-h-12 border bg-white text-lg text-brand-blue max-sm:text-base max-[450px]:text-sm 2xl:min-h-[56px]"
-                        placeholder="Subject / Reason for Inquiry"
-                        required
-                        {...field}
-                        disabled={isSubmitting}
-                      />
-                    </FormControl>
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="description"
-                render={({ field }) => (
-                  <FormItem className="flex w-full flex-col items-start">
-                    <FormControl>
-                      <Textarea
-                        className="min-h-24 border bg-white text-lg text-brand-blue max-sm:text-base max-[450px]:text-sm"
-                        placeholder="Message"
-                        required
-                        {...field}
-                        disabled={isSubmitting}
-                      />
-                    </FormControl>
-                  </FormItem>
-                )}
-              />
-
-              <div className="w-full">
-                <CustomButton
-                  type="submit"
-                  className="btn-full"
-                  loading={isSubmitting}
-                  variant="primary"
-                  loadingText="Submitting..."
-                  text="Submit"
+          {submitted ? (
+            <div className="flex w-full items-center justify-center text-2xl font-bold text-brand-yellow">
+              Thank you for submitting your information. We’ll review it and get
+              back to you within 48 hours.
+            </div>
+          ) : (
+            <Form {...form}>
+              <form
+                onSubmit={form.handleSubmit(onSubmit)}
+                className="flex w-full max-w-2xl flex-col items-start gap-2"
+              >
+                <FormField
+                  control={form.control}
+                  name="name"
+                  render={({ field }) => (
+                    <FormItem className="flex w-full flex-col items-start">
+                      <FormControl>
+                        <Input
+                          className="min-h-12 border bg-white text-lg text-brand-blue max-sm:text-base max-[450px]:text-sm 2xl:min-h-[56px]"
+                          placeholder="Your Name"
+                          required
+                          {...field}
+                          disabled={isSubmitting}
+                        />
+                      </FormControl>
+                    </FormItem>
+                  )}
                 />
-              </div>
-            </form>
-          </Form>
+                <FormField
+                  control={form.control}
+                  name="email"
+                  render={({ field }) => (
+                    <FormItem className="flex w-full flex-col items-start">
+                      <FormControl>
+                        <Input
+                          className="min-h-12 border bg-white text-lg text-brand-blue max-sm:text-base max-[450px]:text-sm 2xl:min-h-[56px]"
+                          placeholder="Your Email Address"
+                          type="email"
+                          required
+                          {...field}
+                          disabled={isSubmitting}
+                        />
+                      </FormControl>
+                    </FormItem>
+                  )}
+                />
+                <FormField
+                  control={form.control}
+                  name="contactNumber"
+                  render={({ field }) => (
+                    <FormItem className="flex w-full flex-col items-start">
+                      <FormControl>
+                        <Input
+                          className="min-h-12 border bg-white text-lg text-brand-blue max-sm:text-base max-[450px]:text-sm 2xl:min-h-[56px]"
+                          placeholder="Your Contact Number"
+                          required
+                          {...field}
+                          disabled={isSubmitting}
+                        />
+                      </FormControl>
+                    </FormItem>
+                  )}
+                />
+                <FormField
+                  control={form.control}
+                  name="subject"
+                  render={({ field }) => (
+                    <FormItem className="flex w-full flex-col items-start">
+                      <FormControl>
+                        <Input
+                          className="min-h-12 border bg-white text-lg text-brand-blue max-sm:text-base max-[450px]:text-sm 2xl:min-h-[56px]"
+                          placeholder="Subject / Reason for Inquiry"
+                          required
+                          {...field}
+                          disabled={isSubmitting}
+                        />
+                      </FormControl>
+                    </FormItem>
+                  )}
+                />
+                <FormField
+                  control={form.control}
+                  name="description"
+                  render={({ field }) => (
+                    <FormItem className="flex w-full flex-col items-start">
+                      <FormControl>
+                        <Textarea
+                          className="min-h-24 border bg-white text-lg text-brand-blue max-sm:text-base max-[450px]:text-sm"
+                          placeholder="Message"
+                          required
+                          {...field}
+                          disabled={isSubmitting}
+                        />
+                      </FormControl>
+                    </FormItem>
+                  )}
+                />
+
+                <div className="w-full">
+                  <CustomButton
+                    type="submit"
+                    className="btn-full"
+                    loading={isSubmitting}
+                    variant="primary"
+                    loadingText="Submitting..."
+                    text="Submit"
+                  />
+                </div>
+              </form>
+            </Form>
+          )}
         </div>
       </div>
     </div>

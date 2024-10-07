@@ -216,6 +216,7 @@ const LoadProfiling = ({ loads, onSubmit, onBack }: Props) => {
                 id="name"
                 placeholder="Appliance/Device Name"
                 value={newAppliance.name}
+                required
                 onChange={(e) =>
                   setNewAppliance({ ...newAppliance, name: e.target.value })
                 }

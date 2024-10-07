@@ -50,7 +50,7 @@ export default function Navbar() {
               <NavigationMenuTrigger>PV Packages</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <div className="w-[500px] rounded-lg bg-slate-50 p-4">
-                  <h4 className="text-lg font-bold">Pro-DIY</h4>
+                  {/* <h4 className="text-lg font-bold">Pro-DIY</h4> */}
                   <div className="flex flex-col gap-1 pl-4">
                     <NavigationMenuLink href="/packages/hybrid">
                       Hybrid On/Off Grid
@@ -59,7 +59,7 @@ export default function Navbar() {
                       Grid-tied / On-Grid{" "}
                     </NavigationMenuLink>
                   </div>
-                  <h4 className="text-lg font-bold">
+                  {/* <h4 className="text-lg font-bold">
                     With Installation Packages
                   </h4>
                   <div className="flex flex-col gap-1 pl-4">
@@ -69,11 +69,11 @@ export default function Navbar() {
                     <NavigationMenuLink href="/packages/cni">
                       Commercial & Indsutrial PV Systems
                     </NavigationMenuLink>
-                  </div>
+                  </div> */}
                 </div>
               </NavigationMenuContent>
             </NavigationMenuItem>
-            <NavigationMenuItem className="max-lg:hidden">
+            {/* <NavigationMenuItem className="max-lg:hidden">
               <Link href="/services" legacyBehavior passHref>
                 <NavigationMenuLink
                   className={`${navigationMenuTriggerStyle()} `}
@@ -81,7 +81,7 @@ export default function Navbar() {
                   Services
                 </NavigationMenuLink>
               </Link>
-            </NavigationMenuItem>
+            </NavigationMenuItem> */}
             <NavigationMenuItem className="max-lg:hidden">
               <Link href="/about" legacyBehavior passHref>
                 <NavigationMenuLink

@@ -31,7 +31,7 @@ const PackageCard = ({ data }: Props) => {
         />
       )}
       {title && (
-        <h4 className="text-xl font-bold text-brand-blue max-sm:text-lg lg:text-2xl">
+        <h4 className="text-center text-xl font-bold text-brand-blue max-sm:text-lg lg:text-2xl">
           {title}
         </h4>
       )}

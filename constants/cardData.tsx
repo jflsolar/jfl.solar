@@ -10,90 +10,65 @@ import {
 export const HybridDIYPackages = [
   {
     title: "5kW Hybrid DIY Package",
-    description: `8,834 kWh - Estimated Annual Production
-            ₱8.7K - Monthly Savings
-            ROI in 3yrs & 8 Months
-            6.82 Tons CO2 Emissions Avoided
-            281 Equivalent Trees Planted`,
-    price: "Php 397,000 (VAT Exclusive)",
+    description: `includes a 5kW hybrid inverter, 5.5kWp solar panels, 10kWh LiFePO4 battery, mounting system, safety devices, and all necessary cables and accessories. FREE Technical Support (PV System Design, Parameter Settings & Troubleshooting)`,
+    price: "Starts at Php 242,535 (VAT Exclusive)",
     imageUrl: "/package.png",
-    buttonText: "View Details",
-    redirectLink: "/hybrid/5kw",
+    buttonText: "Get a Quote",
+    redirectLink: "/quotation?type=hybrid&system=5kW",
   },
   {
     title: "6kW Hybrid DIY Package",
-    description: `8,834 kWh - Estimated Annual Production
-            ₱8.7K - Monthly Savings
-            ROI in 3yrs & 8 Months
-            6.82 Tons CO2 Emissions Avoided
-            281 Equivalent Trees Planted`,
-    price: "Php 397,000 (VAT Exclusive)",
+    description: `includes a 6kW hybrid inverter, 6.05kWp solar panels, 10kWh LiFePO4 battery, mounting system, safety devices, and all necessary cables and accessories. FREE Technical Support (PV System Design, Parameter Settings & Troubleshooting)`,
+    price: "Starts at Php 254,000 (VAT Exclusive)",
     imageUrl: "/package.png",
-    buttonText: "View Details",
-    redirectLink: "/hybrid/5kw",
+    buttonText: "Get a Quote",
+    redirectLink: "/quotation?type=hybrid&system=6kW",
   },
+
   {
     title: "8kW Hybrid DIY Package",
-    description: `8,834 kWh - Estimated Annual Production
-            ₱8.7K - Monthly Savings
-            ROI in 3yrs & 8 Months
-            6.82 Tons CO2 Emissions Avoided
-            281 Equivalent Trees Planted`,
-    price: "Php 397,000 (VAT Exclusive)",
+    description: `includes a 8kW hybrid inverter, 8.25kWp solar panels, 10kWh LiFePO4 battery, mounting system, safety devices, and all necessary cables and accessories. FREE Technical Support (PV System Design, Parameter Settings & Troubleshooting)`,
+    price: "Starts at Php 316,650 (VAT Exclusive)",
     imageUrl: "/package.png",
-    buttonText: "View Details",
-    redirectLink: "/hybrid/5kw",
+    buttonText: "Get a Quote",
+    redirectLink: "/quotation?type=hybrid&system=8kW",
   },
+
   {
     title: "12kW Hybrid DIY Package",
-    description: `8,834 kWh - Estimated Annual Production
-            ₱8.7K - Monthly Savings
-            ROI in 3yrs & 8 Months
-            6.82 Tons CO2 Emissions Avoided
-            281 Equivalent Trees Planted`,
-    price: "Php 397,000 (VAT Exclusive)",
+    description: `includes a 12kW hybrid inverter, 11.6kWp solar panels, 15kWh LiFePO4 battery, mounting system, safety devices, and all necessary cables and accessories. FREE Technical Support (PV System Design, Parameter Settings & Troubleshooting)`,
+    price: "Starts at Php 424,550 (VAT Exclusive)",
     imageUrl: "/package.png",
-    buttonText: "View Details",
-    redirectLink: "/hybrid/5kw",
+    buttonText: "Get a Quote",
+    redirectLink: "/quotation?type=hybrid&system=12kW",
   },
+
   {
     title: "16kW Hybrid DIY Package",
-    description: `8,834 kWh - Estimated Annual Production
-            ₱8.7K - Monthly Savings
-            ROI in 3yrs & 8 Months
-            6.82 Tons CO2 Emissions Avoided
-            281 Equivalent Trees Planted`,
-    price: "Php 397,000 (VAT Exclusive)",
+    description: `includes a 16kW hybrid inverter, 15.6kWp solar panels, 15kWh LiFePO4 battery, mounting system, safety devices, and all necessary cables and accessories. FREE Technical Support (PV System Design, Parameter Settings & Troubleshooting)`,
+    price: "Starts at Php 515,530 (VAT Exclusive)",
     imageUrl: "/package.png",
-    buttonText: "View Details",
-    redirectLink: "/hybrid/5kw",
+    buttonText: "Get a Quote",
+    redirectLink: "/quotation?type=hybrid&system=16kW",
   },
 ];
 
 export const GridTiedDIYPackages = [
   {
-    title: "5kW Hybrid Package",
-    description: `8,834 kWh - Estimated Annual Production
-            ₱8.7K - Monthly Savings
-            ROI in 3yrs & 8 Months
-            6.82 Tons CO2 Emissions Avoided
-            281 Equivalent Trees Planted`,
-    price: "Php 397,000 (VAT Exclusive)",
-    imageUrl: "/package.png",
-    buttonText: "View Details",
-    redirectLink: "/hybrid/5kw",
+    title: "6kW Grid-tied DIY Package",
+    description: `includes a 6kW grid-tied inverter, 6.6kWp solar panels, mounting system, safety devices, and all necessary cables and accessories. FREE Technical Support (PV System Design, Parameter Settings & Troubleshooting) (Note: Net Metering not Included)`,
+    price: "Starts at Php 152,240 (VAT Exclusive)",
+    imageUrl: "/package-gridtied.png",
+    buttonText: "Get a Quote",
+    redirectLink: "/quotation?type=gridtied&system=6kW",
   },
   {
-    title: "5kW Hybrid Package",
-    description: `8,834 kWh - Estimated Annual Production
-            ₱8.7K - Monthly Savings
-            ROI in 3yrs & 8 Months
-            6.82 Tons CO2 Emissions Avoided
-            281 Equivalent Trees Planted`,
-    price: "Php 397,000 (VAT Exclusive)",
-    imageUrl: "/package.png",
-    buttonText: "View Details",
-    redirectLink: "/hybrid/5kw",
+    title: "10kW Grid-tied DIY Package",
+    description: `includes a 10kW grid-tied inverter, 10.44kWp solar panels, mounting system, safety devices, and all necessary cables and accessories. FREE Technical Support (PV System Design, Parameter Settings & Troubleshooting) (Note: Net Metering not Included)`,
+    price: "Starts at Php 216,330 (VAT Exclusive)",
+    imageUrl: "/package-gridtied.png",
+    buttonText: "Get a Quote",
+    redirectLink: "/quotation?type=gridtied&system=10kW",
   },
 ];
 

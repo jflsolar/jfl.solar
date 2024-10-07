@@ -8,7 +8,7 @@ import { useRouter } from "next/navigation";
 const Packages = () => {
   const router = useRouter();
   return (
-    <div className="relative size-full min-h-[95vh] overflow-hidden">
+    <div className="relative size-full min-h-[95vh] overflow-hidden shadow-md">
       <div className="absolute left-0 top-0 flex h-full w-1/2 items-center justify-center max-sm:hidden">
         <Image
           src={"/package-main.png"}

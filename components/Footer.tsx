@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import {
   BrandFacebook,
-  BrandInstagram,
+  // BrandInstagram,
   BrandYoutube,
   Location,
   Mail,
@@ -32,14 +32,14 @@ const Footer = () => {
                   className="rounded-md bg-[#445974] p-1"
                 />
               </a>
-              <a href="https://www.instagram.com" target="_blank">
+              {/* <a href="https://www.instagram.com" target="_blank">
                 <BrandInstagram
                   size={32}
                   fill="white"
                   stroke="#445974"
                   className="rounded-md bg-[#445974] p-1"
                 />
-              </a>
+              </a> */}
               <a href="https://www.youtube.com/@JFLegaspi" target="_blank">
                 <BrandYoutube
                   size={32}
@@ -57,9 +57,9 @@ const Footer = () => {
                 <li>
                   <Link href={"/packages"}>Our Packages</Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link href={"/services"}>Our Services</Link>
-                </li>
+                </li> */}
                 <li>
                   <Link href={"/about"}>About Us</Link>
                 </li>
@@ -76,14 +76,14 @@ const Footer = () => {
                 <li>
                   <Link href={"/services"}>Grid-tied / On-grid</Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link href={"/about"}>Residential PV Systems</Link>
                 </li>
                 <li>
                   <Link href={"/about"}>
                     Commercial & Industrial PV Systems
-                  </Link>
-                </li>
+                  </Link> */}
+                {/* </li> */}
               </ul>
             </div>
             <div className="flex flex-col gap-6 max-sm:items-center">

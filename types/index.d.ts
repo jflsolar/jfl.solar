@@ -4,3 +4,8 @@ export interface LoadProfile {
   hoursPerDay: number;
   powerRating: number;
 }
+
+export type URLProps = {
+  params?: { id?: string };
+  searchParams?: { [key: string]: string | undefined };
+};

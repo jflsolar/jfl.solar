@@ -14,6 +14,6 @@ export const QuotationSchema = z.object({
   contactNumber: z.string(),
   systemType: z.string(),
   systemSize: z.string(),
-  averagekWh: z.number(),
-  shipping: z.string(),
+  averageMonthlyBill: z.string(),
+  // shipping: z.string(),
 });
