@@ -297,7 +297,7 @@ export const GridTiedInverterProducts = [
     brandUrl: "/brand-deye.png",
     size: "10kW",
     buttonText: "View details",
-    redirectLink: "/products/inverters/SUN-SG03LP1-EU-6KW",
+    redirectLink: "/products/inverters/SUN-SG03LP1-EU-10kw",
   },
 ];
 export const PanelProducts = [
