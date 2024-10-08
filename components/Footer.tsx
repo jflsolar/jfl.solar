@@ -71,10 +71,10 @@ const Footer = () => {
               </h4>
               <ul className="flex flex-col gap-3 max-md:text-sm">
                 <li>
-                  <Link href={"/packages"}>Hybrid On/Off Grid</Link>
+                  <Link href={"/packages/hybrid"}>Hybrid On/Off Grid</Link>
                 </li>
                 <li>
-                  <Link href={"/services"}>Grid-tied / On-grid</Link>
+                  <Link href={"/services/gridtied"}>Grid-tied / On-grid</Link>
                 </li>
                 {/* <li>
                   <Link href={"/about"}>Residential PV Systems</Link>
