@@ -74,7 +74,7 @@ const Footer = () => {
                   <Link href={"/packages/hybrid"}>Hybrid On/Off Grid</Link>
                 </li>
                 <li>
-                  <Link href={"/services/gridtied"}>Grid-tied / On-grid</Link>
+                  <Link href={"/packages/gridtied"}>Grid-tied / On-grid</Link>
                 </li>
                 {/* <li>
                   <Link href={"/about"}>Residential PV Systems</Link>

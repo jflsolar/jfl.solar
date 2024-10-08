@@ -49,7 +49,7 @@ export default function Navbar() {
             <NavigationMenuItem className="max-lg:hidden">
               <NavigationMenuTrigger>PV Packages</NavigationMenuTrigger>
               <NavigationMenuContent>
-                <div className="w-[500px] rounded-lg bg-slate-50 p-4">
+                <div className="w-[240px] rounded-lg bg-slate-50 p-4">
                   {/* <h4 className="text-lg font-bold">Pro-DIY</h4> */}
                   <div className="flex flex-col gap-1 pl-4">
                     <NavigationMenuLink href="/packages/hybrid">
@@ -70,6 +70,69 @@ export default function Navbar() {
                       Commercial & Indsutrial PV Systems
                     </NavigationMenuLink>
                   </div> */}
+                </div>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+            <NavigationMenuItem className="max-lg:hidden">
+              <NavigationMenuTrigger>Products</NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <div className="w-[480px] rounded-lg bg-slate-50 p-4">
+                  <div className="flex gap-4">
+                    <div className="flex flex-col gap-2 rounded p-2 hover:bg-slate-100">
+                      <div className="flex flex-col">
+                        <NavigationMenuLink href="/products/inverters">
+                          <h4 className="font-semibold leading-none">
+                            Inverter
+                          </h4>
+                          <p className="text-sm text-slate-400">
+                            Converts solar energy into usable electricity.
+                          </p>
+                        </NavigationMenuLink>
+                      </div>
+                      <div className="ml-2 flex flex-col gap-1 text-base font-bold">
+                        <NavigationMenuLink
+                          href="/products/inverters/hybrid"
+                          className="w-fit hover:underline"
+                        >
+                          Hybrid On/Off Grid
+                        </NavigationMenuLink>
+                        <NavigationMenuLink
+                          href="/products/inverters/gridtied"
+                          className="w-fit hover:underline"
+                        >
+                          Grid-tied Inverters
+                        </NavigationMenuLink>
+                      </div>
+                    </div>
+                    <div className="flex flex-col gap-4">
+                      <NavigationMenuLink
+                        href="/products/panels"
+                        className="rounded p-2 hover:bg-slate-100"
+                      >
+                        <div className="flex flex-col">
+                          <h4 className="font-semibold leading-none">
+                            Solar Panel (PV Module)
+                          </h4>
+                          <p className="text-sm text-slate-400">
+                            Captures sunlight and turns it into power.
+                          </p>
+                        </div>
+                      </NavigationMenuLink>
+                      <NavigationMenuLink
+                        href="/products/batteries"
+                        className="rounded p-2 hover:bg-slate-100"
+                      >
+                        <div className="flex flex-col">
+                          <h4 className="font-semibold leading-none">
+                            Battery (LiFePO4)
+                          </h4>
+                          <p className="text-sm text-slate-400">
+                            Stores excess solar energy for later use.
+                          </p>
+                        </div>
+                      </NavigationMenuLink>
+                    </div>
+                  </div>
                 </div>
               </NavigationMenuContent>
             </NavigationMenuItem>
