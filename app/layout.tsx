@@ -45,7 +45,7 @@ export default function RootLayout({
         </div>
         <Toaster />
         <Script
-          id="clarity"
+          id="ms_clarity"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
