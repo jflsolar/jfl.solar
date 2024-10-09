@@ -12,8 +12,8 @@ interface Props {
     title?: string;
     brandUrl?: string;
     description?: string;
-    srp?: number;
-    installer?: number;
+    srp?: string;
+    installer?: string;
     buttonText?: string;
     size?: string;
     redirectLink?: string;

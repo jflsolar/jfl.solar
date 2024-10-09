@@ -11,7 +11,7 @@ const Inverters = () => {
         </h2>
         <div className="flex flex-wrap justify-evenly gap-12">
           {BatteryProducts.map((item, index) => {
-            return <ProductCard key={`panels-${index}`} data={item} />;
+            return <ProductCard key={`batteries-${index}`} data={item} />;
           })}
         </div>
       </div>
