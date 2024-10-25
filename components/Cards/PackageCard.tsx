@@ -9,7 +9,9 @@ interface Props {
   data: {
     imageUrl?: string;
     title?: string;
-    description?: string;
+    description?: string | React.ReactNode;
+    annualProd?: string;
+    estimatedROI?: string;
     price?: string;
     buttonText?: string;
     redirectLink?: string;
@@ -17,8 +19,16 @@ interface Props {
 }
 const PackageCard = ({ data }: Props) => {
   const router = useRouter();
-  const { imageUrl, title, description, price, buttonText, redirectLink } =
-    data;
+  const {
+    imageUrl,
+    title,
+    description,
+    price,
+    annualProd,
+    estimatedROI,
+    buttonText,
+    redirectLink,
+  } = data;
   return (
     <div className="flex max-w-[320px] flex-col items-center gap-4 p-4">
       {imageUrl && (
@@ -36,10 +46,20 @@ const PackageCard = ({ data }: Props) => {
         </h4>
       )}
       {description && (
-        <p className="text-center max-sm:text-sm">{description}</p>
+        <div className="text-center max-sm:text-sm">{description}</div>
       )}
+      <div>
+        <p className="text-center max-sm:text-sm">
+          {`Annual Production Forecast: `}
+          <span className="font-bold">{annualProd}</span>
+        </p>
+        <p className="text-center max-sm:text-sm">
+          {`Estimated ROI: `}
+          <span className="font-bold">{estimatedROI}</span>
+        </p>
+      </div>
       {price && (
-        <span className="text-center text-lg font-bold text-brand-blue max-sm:text-base 2xl:text-xl">
+        <span className="text-center text-xl font-bold text-brand-blue max-sm:text-base 2xl:text-2xl">
           {price}
         </span>
       )}

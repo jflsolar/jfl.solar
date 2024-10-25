@@ -1,6 +1,7 @@
 import {
   Award,
   Bulb,
+  Check,
   HeartHandshake,
   Settings,
   Tree,
@@ -9,35 +10,78 @@ import {
 
 export const HybridDIYPackages = [
   {
-    title: "5kW Hybrid DIY Package",
-    description: `includes a 5kW hybrid inverter, 5.5kWp solar panels, 10kWh LiFePO4 battery, mounting system, safety devices, and all necessary cables and accessories. FREE Technical Support (PV System Design, Parameter Settings & Troubleshooting)`,
-    price: "Starts at Php 242,535 (VAT Exclusive)",
-    imageUrl: "/package.png",
-    buttonText: "Get a Quote",
-    redirectLink: "/quotation?type=hybrid&system=5kW",
-  },
-  {
-    title: "6kW Hybrid DIY Package",
-    description: `includes a 6kW hybrid inverter, 6.05kWp solar panels, 10kWh LiFePO4 battery, mounting system, safety devices, and all necessary cables and accessories. FREE Technical Support (PV System Design, Parameter Settings & Troubleshooting)`,
-    price: "Starts at Php 254,000 (VAT Exclusive)",
-    imageUrl: "/package.png",
-    buttonText: "Get a Quote",
-    redirectLink: "/quotation?type=hybrid&system=6kW",
+    id: "hybrid-6kw",
+    title: "6kW Hybrid On/Off-Grid",
+    description: (
+      <ul className="flex flex-col items-center">
+        <li className="flex items-center gap-1">
+          <Check size={18} /> 6kW Hybrid Inverter
+        </li>
+        <li className="flex items-center gap-1">
+          <Check size={18} /> 10kWh LiFePO4 Battery
+        </li>
+        <li className="flex items-center gap-1">
+          <Check size={18} /> 7.7kWp Solar Panels
+        </li>
+      </ul>
+    ),
+    inverter: "1x 6kW Lux Power or Deye Hybrid Inverter",
+    battery: "1x 200Ah ATE or LVFU LiFePO4 Battery (10kWh)",
+    panel: "14pcs 550W AE Solar Panels (7.7kWp)",
+    mounting: "Complete Mounting System (End, Mid-Clamps & Railings)",
+    safetyDevices:
+      "AC and Safety Devices (MCB, PV Iso Switch, SPD, ATS & MCCB)",
+    cables: "Cables and Wires (PV Cable, Battery Cable & THHN Wire)",
+    accessories:
+      "Accessories (Cable Tray, Enclosure Box, MC4 Connectors, Ground Rod, Flexible Conduit)",
+    annualProd: "11,000 kWh",
+    estimatedROI: "2.5 - 3 yrs",
+    price: "₱250,000",
+    imageUrl: "/hybrid-6kw.png",
+    buttonText: "View Details",
+    redirectLink: "/packages/hybrid-6kw",
+    quoteLink: "/quotation?type=hybrid&system=6kw",
   },
 
   {
+    id: "hybrid-8kw",
     title: "8kW Hybrid DIY Package",
-    description: `includes a 8kW hybrid inverter, 8.25kWp solar panels, 10kWh LiFePO4 battery, mounting system, safety devices, and all necessary cables and accessories. FREE Technical Support (PV System Design, Parameter Settings & Troubleshooting)`,
-    price: "Starts at Php 316,650 (VAT Exclusive)",
-    imageUrl: "/package.png",
-    buttonText: "Get a Quote",
-    redirectLink: "/quotation?type=hybrid&system=8kW",
+    annualProd: "12,500 kWh",
+    description: (
+      <ul className="flex flex-col items-center">
+        <li className="flex items-center gap-1">
+          <Check size={18} /> 8kW Hybrid Inverter
+        </li>
+        <li className="flex items-center gap-1">
+          <Check size={18} /> 15kWh LiFePO4 Battery
+        </li>
+        <li className="flex items-center gap-1">
+          <Check size={18} /> 8.8kWp Solar Panels
+        </li>
+      </ul>
+    ),
+
+    inverter: "1x 8kW Lux Power or Deye Hybrid Inverter",
+    battery: "1x 300Ah ATE or Wipuvo LiFePO4 Battery (15kWh)",
+    panel: "16pcs 550W AE Solar Panels (8.8kWp)",
+    mounting: "Complete Mounting System (End, Mid-Clamps & Railings)",
+    safetyDevices:
+      "AC and Safety Devices (MCB, PV Iso Switch, SPD, ATS & MCCB)",
+    cables: "Cables and Wires (PV Cable, Battery Cable & THHN Wire)",
+    accessories:
+      "Accessories (Cable Tray, Enclosure Box, MC4 Connectors, Ground Rod, Flexible Conduit)",
+    estimatedROI: "2.3 - 3 yrs",
+    price: "₱350,000",
+    imageUrl: "/hybrid-8kw.png",
+    buttonText: "View Details",
+    redirectLink: "/packages/hybrid-8kw",
+    quoteLink: "/quotation?type=hybrid&system=8kw",
   },
 
   {
     title: "12kW Hybrid DIY Package",
     description: `includes a 12kW hybrid inverter, 11.6kWp solar panels, 15kWh LiFePO4 battery, mounting system, safety devices, and all necessary cables and accessories. FREE Technical Support (PV System Design, Parameter Settings & Troubleshooting)`,
-    price: "Starts at Php 424,550 (VAT Exclusive)",
+    price: "Starts at ₱424,550",
     imageUrl: "/package.png",
     buttonText: "Get a Quote",
     redirectLink: "/quotation?type=hybrid&system=12kW",
@@ -46,7 +90,7 @@ export const HybridDIYPackages = [
   {
     title: "16kW Hybrid DIY Package",
     description: `includes a 16kW hybrid inverter, 15.6kWp solar panels, 15kWh LiFePO4 battery, mounting system, safety devices, and all necessary cables and accessories. FREE Technical Support (PV System Design, Parameter Settings & Troubleshooting)`,
-    price: "Starts at Php 515,530 (VAT Exclusive)",
+    price: "Starts at ₱515,530",
     imageUrl: "/package.png",
     buttonText: "Get a Quote",
     redirectLink: "/quotation?type=hybrid&system=16kW",
@@ -54,22 +98,22 @@ export const HybridDIYPackages = [
 ];
 
 export const GridTiedDIYPackages = [
-  {
-    title: "6kW Grid-tied DIY Package",
-    description: `includes a 6kW grid-tied inverter, 6.6kWp solar panels, mounting system, safety devices, and all necessary cables and accessories. FREE Technical Support (PV System Design, Parameter Settings & Troubleshooting) (Note: Net Metering not Included)`,
-    price: "Starts at Php 152,240 (VAT Exclusive)",
-    imageUrl: "/package-gridtied.png",
-    buttonText: "Get a Quote",
-    redirectLink: "/quotation?type=gridtied&system=6kW",
-  },
-  {
-    title: "10kW Grid-tied DIY Package",
-    description: `includes a 10kW grid-tied inverter, 10.44kWp solar panels, mounting system, safety devices, and all necessary cables and accessories. FREE Technical Support (PV System Design, Parameter Settings & Troubleshooting) (Note: Net Metering not Included)`,
-    price: "Starts at Php 216,330 (VAT Exclusive)",
-    imageUrl: "/package-gridtied.png",
-    buttonText: "Get a Quote",
-    redirectLink: "/quotation?type=gridtied&system=10kW",
-  },
+  // {
+  //   title: "6kW Grid-tied DIY Package",
+  //   description: `includes a 6kW grid-tied inverter, 6.6kWp solar panels, mounting system, safety devices, and all necessary cables and accessories. FREE Technical Support (PV System Design, Parameter Settings & Troubleshooting) (Note: Net Metering not Included)`,
+  //   price: "Starts at ₱152,240",
+  //   imageUrl: "/package-gridtied.png",
+  //   buttonText: "Get a Quote",
+  //   redirectLink: "/quotation?type=gridtied&system=6kW",
+  // },
+  // {
+  //   title: "10kW Grid-tied DIY Package",
+  //   description: `includes a 10kW grid-tied inverter, 10.44kWp solar panels, mounting system, safety devices, and all necessary cables and accessories. FREE Technical Support (PV System Design, Parameter Settings & Troubleshooting) (Note: Net Metering not Included)`,
+  //   price: "Starts at ₱216,330",
+  //   imageUrl: "/package-gridtied.png",
+  //   buttonText: "Get a Quote",
+  //   redirectLink: "/quotation?type=gridtied&system=10kW",
+  // },
 ];
 
 export const ServicesData = [

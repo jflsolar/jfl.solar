@@ -33,7 +33,7 @@ const Packages = () => {
       <div className="relative z-10 mx-auto max-w-7xl">
         <div className="ml-auto flex max-w-full flex-col gap-8 px-12 py-40 max-sm:items-center max-sm:py-20 max-sm:text-center max-[450px]:px-4 sm:max-w-[50%] lg:px-20 xl:max-w-screen-sm">
           <Image
-            src={"/package-main.png"}
+            src={"/hybrid-6kw.png"}
             width={250}
             height={250}
             alt="cover"
