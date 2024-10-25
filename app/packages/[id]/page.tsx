@@ -98,7 +98,7 @@ const HybridPackage = ({ params }: URLProps) => {
               <CustomButton
                 variant="primary"
                 text={"Get a Quote"}
-                onClick={() => router.push(data?.quoteLink)}
+                onClick={() => router.push(data.quoteLink || "")}
               />
             )}
             <span className="rounded-lg bg-yellow-100 p-4 text-lg font-bold italic text-yellow-900">

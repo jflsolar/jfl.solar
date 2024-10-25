@@ -1,3 +1,4 @@
+import { Package } from "@/types";
 import {
   Award,
   Bulb,
@@ -8,7 +9,7 @@ import {
   Users,
 } from "tabler-icons-react";
 
-export const HybridDIYPackages = [
+export const HybridDIYPackages: Package[] = [
   {
     id: "hybrid-6kw",
     title: "6kW Hybrid On/Off-Grid",
@@ -97,23 +98,33 @@ export const HybridDIYPackages = [
   },
 ];
 
-export const GridTiedDIYPackages = [
-  // {
-  //   title: "6kW Grid-tied DIY Package",
-  //   description: `includes a 6kW grid-tied inverter, 6.6kWp solar panels, mounting system, safety devices, and all necessary cables and accessories. FREE Technical Support (PV System Design, Parameter Settings & Troubleshooting) (Note: Net Metering not Included)`,
-  //   price: "Starts at ₱152,240",
-  //   imageUrl: "/package-gridtied.png",
-  //   buttonText: "Get a Quote",
-  //   redirectLink: "/quotation?type=gridtied&system=6kW",
-  // },
-  // {
-  //   title: "10kW Grid-tied DIY Package",
-  //   description: `includes a 10kW grid-tied inverter, 10.44kWp solar panels, mounting system, safety devices, and all necessary cables and accessories. FREE Technical Support (PV System Design, Parameter Settings & Troubleshooting) (Note: Net Metering not Included)`,
-  //   price: "Starts at ₱216,330",
-  //   imageUrl: "/package-gridtied.png",
-  //   buttonText: "Get a Quote",
-  //   redirectLink: "/quotation?type=gridtied&system=10kW",
-  // },
+export const GridTiedDIYPackages: Package[] = [
+  {
+    id: "grid-tied-6kw",
+    title: "6kW Grid-tied DIY Package",
+    description: `includes a 6kW grid-tied inverter, 6.6kWp solar panels, mounting system, safety devices, and all necessary cables and accessories. FREE Technical Support (PV System Design, Parameter Settings & Troubleshooting) (Note: Net Metering not Included)`,
+    inverter: "1x 6kW Deye Grid-tied Inverter",
+    panel: "14pcs 550W AE Solar Panels (7.7kWp)",
+    mounting: "Complete Mounting System (End, Mid-Clamps & Railings)",
+    safetyDevices:
+      "AC and Safety Devices (MCB, PV Iso Switch, SPD, ATS & MCCB)",
+    cables: "Cables and Wires (PV Cable, Battery Cable & THHN Wire)",
+    accessories:
+      "Accessories (Cable Tray, Enclosure Box, MC4 Connectors, Ground Rod, Flexible Conduit)",
+    price: "Starts at ₱152,240",
+    imageUrl: "/package-gridtied.png",
+    buttonText: "Get a Quote",
+    redirectLink: "/quotation?type=gridtied&system=6kW",
+    quoteLink: "/quotation?type=gridtied&system=6kW",
+  },
+  {
+    title: "10kW Grid-tied DIY Package",
+    description: `includes a 10kW grid-tied inverter, 10.44kWp solar panels, mounting system, safety devices, and all necessary cables and accessories. FREE Technical Support (PV System Design, Parameter Settings & Troubleshooting) (Note: Net Metering not Included)`,
+    price: "Starts at ₱216,330",
+    imageUrl: "/package-gridtied.png",
+    buttonText: "Get a Quote",
+    redirectLink: "/quotation?type=gridtied&system=10kW",
+  },
 ];
 
 export const ServicesData = [

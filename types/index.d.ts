@@ -1,3 +1,5 @@
+import React from "react";
+
 export interface LoadProfile {
   name: string;
   quantity: number;
@@ -10,16 +12,6 @@ export type URLProps = {
   searchParams?: { [key: string]: string | undefined };
 };
 
-export type TableDetailProps = {
-  data: Record<
-    string,
-    { title: string; value: any; href?: string | null; valueClassName?: string }
-  >;
-  options?: {
-    dateFormat: DateFormat;
-  };
-};
-
 export type DateFormat =
   | "MM/DD/YYYY"
   | "MM/DD/YY"
@@ -30,3 +22,33 @@ export type DateFormat =
   | "MMM. DD"
   | "MMMM DD"
   | "YYYY-MM-DD";
+
+export type TableDetailProps = {
+  data: Record<
+    string,
+    { title: string; value: any; href?: string | null; valueClassName?: string }
+  >;
+  options?: {
+    dateFormat: DateFormat;
+  };
+};
+
+export type Package = {
+  id?: string;
+  title: string;
+  description: React.ReactNode | string;
+  inverter?: string;
+  battery?: string;
+  panel?: string;
+  mounting?: string;
+  safetyDevices?: string;
+  cables?: string;
+  accessories?: string;
+  annualProd?: string;
+  estimatedROI?: string;
+  price: string;
+  imageUrl: string;
+  buttonText: string;
+  redirectLink: string;
+  quoteLink?: string;
+};
