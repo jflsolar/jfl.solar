@@ -80,21 +80,71 @@ export const HybridDIYPackages: Package[] = [
   },
 
   {
-    title: "12kW Hybrid DIY Package",
-    description: `includes a 12kW hybrid inverter, 11.6kWp solar panels, 15kWh LiFePO4 battery, mounting system, safety devices, and all necessary cables and accessories. FREE Technical Support (PV System Design, Parameter Settings & Troubleshooting)`,
-    price: "Starts at ₱424,550",
-    imageUrl: "/package.png",
-    buttonText: "Get a Quote",
-    redirectLink: "/quotation?type=hybrid&system=12kW",
+    id: "hybrid-12kw",
+    title: "12kw Hybrid On/Off-Grid",
+    description: (
+      <ul className="flex flex-col items-center">
+        <li className="flex items-center gap-1">
+          <Check size={18} /> 12kw Hybrid Inverter
+        </li>
+        <li className="flex items-center gap-1">
+          <Check size={18} /> 15kWh LiFePO4 Battery
+        </li>
+        <li className="flex items-center gap-1">
+          <Check size={18} /> 11kWp Solar Panels
+        </li>
+      </ul>
+    ),
+    inverter: "1x 12kW Lux Power or Deye Hybrid Inverter",
+    battery: "1x 300Ah ATE or LVFU LiFePO4 Battery (15kWh)",
+    panel: "20pcs 550W AE Solar Panels (11kWp)",
+    mounting: "Complete Mounting System (End, Mid-Clamps & Railings)",
+    safetyDevices:
+      "AC and Safety Devices (MCB, PV Iso Switch, SPD, ATS & MCCB)",
+    cables: "Cables and Wires (PV Cable, Battery Cable & THHN Wire)",
+    accessories:
+      "Accessories (Cable Tray, Enclosure Box, MC4 Connectors, Ground Rod, Flexible Conduit)",
+    annualProd: "16,000 kWh",
+    estimatedROI: "2.2 - 3 yrs",
+    price: "₱420,000",
+    imageUrl: "/hybrid-12kw.png",
+    buttonText: "View Details",
+    redirectLink: "/packages/hybrid-12kw",
+    quoteLink: "/quotation?type=hybrid&system=12kw",
   },
 
   {
-    title: "16kW Hybrid DIY Package",
-    description: `includes a 16kW hybrid inverter, 15.6kWp solar panels, 15kWh LiFePO4 battery, mounting system, safety devices, and all necessary cables and accessories. FREE Technical Support (PV System Design, Parameter Settings & Troubleshooting)`,
-    price: "Starts at ₱515,530",
-    imageUrl: "/package.png",
-    buttonText: "Get a Quote",
-    redirectLink: "/quotation?type=hybrid&system=16kW",
+    id: "hybrid-16kw",
+    title: "16kw Hybrid On/Off-Grid",
+    description: (
+      <ul className="flex flex-col items-center">
+        <li className="flex items-center gap-1">
+          <Check size={18} /> 16kw Hybrid Inverter
+        </li>
+        <li className="flex items-center gap-1">
+          <Check size={18} /> 15kWh LiFePO4 Battery
+        </li>
+        <li className="flex items-center gap-1">
+          <Check size={18} /> 19kWp Solar Panels
+        </li>
+      </ul>
+    ),
+    inverter: "1x 16kw Lux Power or Deye Hybrid Inverter",
+    battery: "1x 300Ah ATE or LVFU LiFePO4 Battery (15kWh)",
+    panel: "34pcs 580W Seraphim Solar Panels (19kWp)",
+    mounting: "Complete Mounting System (End, Mid-Clamps & Railings)",
+    safetyDevices:
+      "AC and Safety Devices (MCB, PV Iso Switch, SPD, ATS & MCCB)",
+    cables: "Cables and Wires (PV Cable, Battery Cable & THHN Wire)",
+    accessories:
+      "Accessories (Cable Tray, Enclosure Box, MC4 Connectors, Ground Rod, Flexible Conduit)",
+    annualProd: "28,000 kWh",
+    estimatedROI: "1.5 - 2.5 yrs",
+    price: "₱520,000",
+    imageUrl: "/hybrid-16kw.png",
+    buttonText: "View Details",
+    redirectLink: "/packages/hybrid-16kw",
+    quoteLink: "/quotation?type=hybrid&system=16kw",
   },
 ];
 
