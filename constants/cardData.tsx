@@ -125,21 +125,21 @@ export const HybridDIYPackages: Package[] = [
           <Check size={18} /> 15kWh LiFePO4 Battery
         </li>
         <li className="flex items-center gap-1">
-          <Check size={18} /> 19kWp Solar Panels
+          <Check size={18} /> 15.6kWp Solar Panels
         </li>
       </ul>
     ),
     inverter: "1x 16kw Lux Power or Deye Hybrid Inverter",
     battery: "1x 300Ah ATE or LVFU LiFePO4 Battery (15kWh)",
-    panel: "34pcs 580W Seraphim Solar Panels (19kWp)",
+    panel: "27pcs 580W Seraphim Solar Panels (15.6kWp)",
     mounting: "Complete Mounting System (End, Mid-Clamps & Railings)",
     safetyDevices:
       "AC and Safety Devices (MCB, PV Iso Switch, SPD, ATS & MCCB)",
     cables: "Cables and Wires (PV Cable, Battery Cable & THHN Wire)",
     accessories:
       "Accessories (Cable Tray, Enclosure Box, MC4 Connectors, Ground Rod, Flexible Conduit)",
-    annualProd: "28,000 kWh",
-    estimatedROI: "1.5 - 2.5 yrs",
+    annualProd: "22,800 kWh",
+    estimatedROI: "2 - 2.5 yrs",
     price: "₱520,000",
     imageUrl: "/hybrid-16kw.png",
     buttonText: "View Details",
