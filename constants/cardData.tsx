@@ -41,7 +41,7 @@ export const HybridDIYPackages: Package[] = [
     imageUrl: "/hybrid-6kw.png",
     buttonText: "View Details",
     redirectLink: "/packages/hybrid-6kw",
-    quoteLink: "/quotation?type=hybrid&system=6kw",
+    quoteLink: "/quotation?type=hybrid&system=6",
   },
 
   {
@@ -76,7 +76,7 @@ export const HybridDIYPackages: Package[] = [
     imageUrl: "/hybrid-8kw.png",
     buttonText: "View Details",
     redirectLink: "/packages/hybrid-8kw",
-    quoteLink: "/quotation?type=hybrid&system=8kw",
+    quoteLink: "/quotation?type=hybrid&system=8",
   },
 
   {
@@ -110,7 +110,7 @@ export const HybridDIYPackages: Package[] = [
     imageUrl: "/hybrid-12kw.png",
     buttonText: "View Details",
     redirectLink: "/packages/hybrid-12kw",
-    quoteLink: "/quotation?type=hybrid&system=12kw",
+    quoteLink: "/quotation?type=hybrid&system=12",
   },
 
   {
@@ -144,7 +144,7 @@ export const HybridDIYPackages: Package[] = [
     imageUrl: "/hybrid-16kw.png",
     buttonText: "View Details",
     redirectLink: "/packages/hybrid-16kw",
-    quoteLink: "/quotation?type=hybrid&system=16kw",
+    quoteLink: "/quotation?type=hybrid&system=16",
   },
 ];
 
