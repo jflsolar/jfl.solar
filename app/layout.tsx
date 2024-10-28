@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 // import { Inter } from "next/font/google";
 
-import { Inter, Montserrat } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 import React from "react";
@@ -23,10 +23,10 @@ const inter = Inter({
   weight: ["400", "700"], // Optional: choose weights you want
 });
 
-export const montserrat = Montserrat({
-  subsets: ["latin"],
-  weight: ["400", "700"], // Optional: choose weights you want
-});
+// export const montserrat = Montserrat({
+//   subsets: ["latin"],
+//   weight: ["400", "700"], // Optional: choose weights you want
+// });
 
 export default function RootLayout({
   children,

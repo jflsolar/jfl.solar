@@ -88,7 +88,7 @@ const HybridPackage = ({ params }: URLProps) => {
             <div className="mt-8">
               <KeyValueTable
                 input={inverterData}
-                titleWidth={340}
+                titleWidth={300}
                 className="text-sm text-slate-700 md:text-base"
                 keyClassName="font-semibold"
                 valueClassName="min-w-[240px]"
@@ -109,24 +109,30 @@ const HybridPackage = ({ params }: URLProps) => {
           </div>
         </div>
         <div className="bg-brand-blue text-brand-yellow">
-          <div className=" mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-x-8 px-4 py-8 text-center text-base font-bold">
-            <div className=" flex items-center gap-2">
-              <h4 className="whitespace-nowrap">Contact our Sales: </h4>
-              <div className="flex items-center whitespace-nowrap">
+          <div className=" mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-x-8 px-4 py-8 text-center text-base font-bold max-sm:flex-col max-sm:gap-y-4">
+            <div className=" flex items-center gap-2 max-sm:line-clamp-1">
+              <h4 className="whitespace-nowrap max-sm:font-normal">
+                Contact our Sales:{" "}
+              </h4>
+              <div className="flex items-center whitespace-nowrap max-sm:w-full max-sm:justify-center max-sm:whitespace-normal">
                 <span>0976-135-9479 / 0917-153-5569</span>
               </div>
             </div>
-            <span>|</span>
-            <div className="flex items-center gap-2">
-              <h4 className="whitespace-nowrap">Message us on Facebook:</h4>
-              <div className="flex items-center whitespace-nowrap">
+            <span className="max-sm:hidden">|</span>
+            <div className="flex flex-row items-center gap-2 max-sm:line-clamp-1 max-sm:flex-col">
+              <h4 className="whitespace-nowrap max-sm:font-normal">
+                Message us on Facebook:
+              </h4>
+              <div className="flex items-center whitespace-nowrap max-sm:w-full max-sm:justify-center">
                 <a href="https://www.facebook.com/jflsolar">@jflsolar</a>
               </div>
             </div>
-            <span>|</span>
-            <div className="flex items-center gap-2">
-              <h4 className="whitespace-nowrap">Send us an Email: </h4>
-              <div className="flex items-center whitespace-nowrap">
+            <span className="max-sm:hidden">|</span>
+            <div className="flex items-center gap-2 max-sm:line-clamp-1">
+              <h4 className="whitespace-nowrap max-sm:font-normal">
+                Send us an Email:{" "}
+              </h4>
+              <div className="flex items-center whitespace-nowrap max-sm:w-full max-sm:justify-center">
                 <span>{EMAIL_ADDRESS}</span>
               </div>
             </div>

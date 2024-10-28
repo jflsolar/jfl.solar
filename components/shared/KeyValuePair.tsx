@@ -18,10 +18,11 @@ const KeyValuePair: React.FC<KeyValuePairProps> = ({
   keyClassName,
   valueClass,
 }) => {
+  console.log("titleWidth", titleWidth);
   return (
     <div className="mb-2 flex flex-row max-sm:flex-col">
       <span
-        className={`paragraph-semibold text-dark400_light800 shrink-0 ${keyClassName}`}
+        className={`shrink-0 ${keyClassName} max-sm:max-w-fit`}
         style={{ width: titleWidth || 180 }}
       >
         {title}:
@@ -35,7 +36,11 @@ const KeyValuePair: React.FC<KeyValuePairProps> = ({
           {value}
         </Link>
       ) : (
-        <p className={` text-dark300_light700 w-full ${valueClass}`}>{value}</p>
+        <p
+          className={` w-full max-sm:min-w-full max-sm:max-w-fit ${valueClass}`}
+        >
+          {value}
+        </p>
       )}
     </div>
   );
