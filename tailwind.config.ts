@@ -66,6 +66,7 @@ const config: Config = {
           "linear-gradient(270deg, #ffffff00 0%, #ffffff 50%)",
         "mission-gradient-50":
           "linear-gradient(90deg, #333f4f00 0%, #333f4f 50%)",
+        main: "url('/bg.png')",
       },
       borderRadius: {
         lg: "var(--radius)",

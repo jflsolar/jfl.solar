@@ -22,7 +22,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
 
     const data = {
       sender: { email: "info@jflsolar.com", name: "JFL Solar" },
-      to: [{ email: "jflsolarjay@gmail.com", name: "Jay" }],
+      to: [{ email: "jflsolar.johnvince@gmail.com", name: "John" }],
       subject: "New Quotation Request",
       htmlContent: `
         <h1>New Quotation Request</h1>
@@ -30,7 +30,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Contact Number:</strong> ${contactNumber}</p>
         <p><strong>System Type:</strong> ${systemType}</p>
-        <p><strong>System Size:</strong> ${systemSize} (kWh)</p>
+        <p><strong>System Size:</strong> ${systemSize} (kW)</p>
         <p><strong>Ave. Monthly Bill:</strong> ${averageMonthlyBill}</p>
       `,
     };

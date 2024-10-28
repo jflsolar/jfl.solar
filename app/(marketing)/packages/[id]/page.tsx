@@ -1,7 +1,7 @@
 "use client";
 
 import PackageCard from "@/components/Cards/PackageCard";
-import CustomButton from "@/components/CustomButton";
+import CustomButton from "@/components/shared/CustomButton";
 import KeyValueTable from "@/components/shared/KeyValueTable";
 import { GridTiedDIYPackages, HybridDIYPackages } from "@/constants/cardData";
 import { EMAIL_ADDRESS } from "@/constants/constant";

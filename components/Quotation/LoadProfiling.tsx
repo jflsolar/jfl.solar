@@ -18,7 +18,7 @@ import {
 } from "@/components/ui/dialog";
 import { Label } from "@/components/ui/label";
 import { Edit, Trash } from "tabler-icons-react";
-import CustomButton from "../CustomButton";
+import CustomButton from "../shared/CustomButton";
 import { useToast } from "@/hooks/use-toast";
 import { LoadProfile } from "@/types";
 

@@ -8,7 +8,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { Form, FormControl, FormField, FormItem } from "../ui/form";
 import { Textarea } from "../ui/textarea";
-import CustomButton from "../CustomButton";
+import CustomButton from "../shared/CustomButton";
 
 const ServiceForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);

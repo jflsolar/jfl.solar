@@ -1,4 +1,5 @@
 import React from "react";
+import { Icon } from "tabler-icons-react";
 
 export interface LoadProfile {
   name: string;
@@ -51,4 +52,11 @@ export type Package = {
   buttonText: string;
   redirectLink: string;
   quoteLink?: string;
+};
+
+export type SidebarNavItem = {
+  title: string;
+  icon?: Icon;
+  href?: string;
+  items?: SidebarNavItem[];
 };

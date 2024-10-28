@@ -3,8 +3,6 @@ import type { Metadata } from "next";
 
 import { Inter, Montserrat } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import { Toaster } from "@/components/ui/toaster";
 import React from "react";
 import Script from "next/script";
@@ -38,11 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className={`relative ${inter.className}`}>
-          <Navbar />
-          {children}
-          <Footer />
-        </div>
+        <div className={`relative ${inter.className}`}>{children}</div>
         <Toaster />
         <Script
           id="ms_clarity"

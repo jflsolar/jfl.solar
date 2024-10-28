@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { BrandWaze } from "tabler-icons-react";
-import Map from "../Map";
+import Map from "../shared/Map";
 
 const VisitUs = () => {
   return (

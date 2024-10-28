@@ -1,6 +1,6 @@
 "use client";
 
-import CustomButton from "@/components/CustomButton";
+import CustomButton from "@/components/shared/CustomButton";
 import { Form, FormControl, FormField, FormItem } from "@/components/ui/form";
 // import LoadProfiling from "@/components/Quotation/LoadProfiling";
 import { Input } from "@/components/ui/input";
@@ -242,7 +242,7 @@ const ContactForm = ({
   }
 
   return (
-    <div className="flex w-full flex-col items-center gap-8">
+    <div className="flex w-full flex-col items-center gap-8 px-2">
       <h2 className="text-center text-3xl font-bold">Contact Information</h2>
       <Form {...form}>
         <form

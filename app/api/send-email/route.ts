@@ -20,7 +20,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
 
     const data = {
       sender: { email: "info@jflsolar.com", name: "JFL Solar" },
-      to: [{ email: "jflsolarjay@gmail.com", name: "Jay" }],
+      to: [{ email: "jflsolar.johnvince@gmail.com", name: "John" }],
       subject: "New Contact Form Submission",
       htmlContent: `
         <h1>New Contact Form Submission</h1>

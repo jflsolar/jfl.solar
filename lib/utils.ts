@@ -1,6 +1,7 @@
 import { DateFormat } from "@/types";
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
+import CryptoJS from "crypto-js";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -98,3 +99,14 @@ export const formatDate = (date: Date | string, format: DateFormat): string => {
     return date?.toString();
   }
 };
+
+export function validatePassword(
+  password: string,
+  hashedPassword: string,
+  salt: string
+): boolean {
+  const hash = CryptoJS.PBKDF2(password, salt, {
+    keySize: 256 / 32,
+  }).toString();
+  return hash === hashedPassword;
+}

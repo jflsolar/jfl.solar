@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import React from "react";
-import CustomButton from "../CustomButton";
+import CustomButton from "../shared/CustomButton";
 import { useRouter } from "next/navigation";
 
 const Packages = () => {
@@ -11,7 +11,7 @@ const Packages = () => {
     <div className="relative size-full min-h-[95vh] overflow-hidden shadow-md">
       <div className="absolute left-0 top-0 flex h-full w-1/2 items-center justify-center max-sm:hidden">
         <Image
-          src={"/package-main.png"}
+          src={"/hybrid-6kw.png"}
           width={500}
           height={500}
           alt="cover"
@@ -32,13 +32,15 @@ const Packages = () => {
       </div>
       <div className="relative z-10 mx-auto max-w-7xl">
         <div className="ml-auto flex max-w-full flex-col gap-8 px-12 py-40 max-sm:items-center max-sm:py-20 max-sm:text-center max-[450px]:px-4 sm:max-w-[50%] lg:px-20 xl:max-w-screen-sm">
-          <Image
-            src={"/hybrid-6kw.png"}
-            width={250}
-            height={250}
-            alt="cover"
-            className="hidden object-contain max-sm:flex"
-          />
+          <div className="hidden items-center justify-center rounded-full bg-white p-16 max-sm:flex max-[250px]:p-8">
+            <Image
+              src={"/hybrid-6kw.png"}
+              width={250}
+              height={250}
+              alt="cover"
+              className=" object-contain "
+            />
+          </div>
           <h2 className="title-bold">
             Tailored{" "}
             <span className="text-brand-yellow">Solar PV Packages</span> for

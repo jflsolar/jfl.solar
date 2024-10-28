@@ -9,6 +9,108 @@ import {
   Users,
 } from "tabler-icons-react";
 
+export const ServicesData = [
+  {
+    title: "PV SYSTEM DESIGN",
+    description: `Professional and efficient installation services ensuring optimal performance and longevity of your solar systems.`,
+    imageUrl: "/package.png",
+  },
+  {
+    title: "FULL INSTALLATION",
+    description: `Professional and efficient installation services ensuring optimal performance and longevity of your solar systems.`,
+    imageUrl: "/package.png",
+  },
+  {
+    title: "PROCUREMENT",
+    description: `Professional and efficient installation services ensuring optimal performance and longevity of your solar systems.`,
+    imageUrl: "/package.png",
+  },
+  {
+    title: "MAINTENANCE",
+    description: `Professional and efficient installation services ensuring optimal performance and longevity of your solar systems.`,
+    imageUrl: "/package.png",
+  },
+  {
+    title: "PROJECT MANAGEMENT",
+    description: `Professional and efficient installation services ensuring optimal performance and longevity of your solar systems.`,
+    imageUrl: "/package.png",
+  },
+  {
+    title: "PROJECT CONSULTATION",
+    description: `Professional and efficient installation services ensuring optimal performance and longevity of your solar systems.`,
+    imageUrl: "/package.png",
+  },
+  {
+    title: "TROUBLESHOOTING AND TECHNICAL SUPPORT",
+    description: `Professional and efficient installation services ensuring optimal performance and longevity of your solar systems.`,
+    imageUrl: "/package.png",
+  },
+  {
+    title: "EXCLUSIVE MENTORING",
+    description: `Professional and efficient installation services ensuring optimal performance and longevity of your solar systems.`,
+    imageUrl: "/package.png",
+  },
+  {
+    title: "TRAINING AND SEMINARS",
+    description: `Professional and efficient installation services ensuring optimal performance and longevity of your solar systems.`,
+    imageUrl: "/package.png",
+  },
+];
+
+export const JFLTeamMembers = [
+  {
+    imageUrl: "/team-jf.jpg",
+    name: "JF Legaspi",
+    position: "CEO / Founder",
+    description: `"A visionary leader with extensive experience in the global solar industry, committed to advancing renewable energy solutions in the Philippines."`,
+  },
+  {
+    imageUrl: "/team-john.jpg",
+    name: "John Bergueles",
+    position: "CCO (Sales and Marketing)",
+    description: `"A dynamic strategist driving business growth through effective sales initiatives and impactful marketing campaigns."`,
+  },
+  {
+    imageUrl: "/team-jay.jpg",
+    name: "Jay Escander",
+    position: "CTO",
+    description: `"An innovative technical expert specializing in designing and implementing efficient and reliable solar PV systems."`,
+  },
+];
+
+export const FeaturesData = [
+  {
+    title: "European Quality Standards",
+    description: `We adhere to stringent European quality benchmarks, ensuring superior workmanship and durable solutions.`,
+    icon: Award,
+  },
+  {
+    title: "Expertise and Experience",
+    description: `Our team brings international experience and deep technical knowledge, guaranteeing innovative and effective solutions.`,
+    icon: Bulb,
+  },
+  {
+    title: "Comprehensive Services",
+    description: `From procurement to maintenance, we offer end-to-end services tailored to meet diverse energy needs.`,
+    icon: Settings,
+  },
+  {
+    title: "Customer-Centric Approach",
+    description: `We prioritize our clients' satisfaction, offering personalized services and ongoing support throughout your solar journey.`,
+    icon: Users,
+  },
+  {
+    title: "Technical Support for DIY Enthusiasts",
+    description: `Our team brings international experience and deep technical knowledge, guaranteeing innovative and effective solutions.`,
+    icon: HeartHandshake,
+  },
+  {
+    title: "Commitment to Sustainability",
+    description: `Our solutions are designed to promote environmental stewardship and contribute to a sustainable future.`,
+    icon: Tree,
+  },
+];
+
 export const HybridDIYPackages: Package[] = [
   {
     id: "hybrid-6kw",
@@ -174,108 +276,6 @@ export const GridTiedDIYPackages: Package[] = [
     imageUrl: "/package-gridtied.png",
     buttonText: "Get a Quote",
     redirectLink: "/quotation?type=gridtied&system=10kW",
-  },
-];
-
-export const ServicesData = [
-  {
-    title: "PV SYSTEM DESIGN",
-    description: `Professional and efficient installation services ensuring optimal performance and longevity of your solar systems.`,
-    imageUrl: "/package.png",
-  },
-  {
-    title: "FULL INSTALLATION",
-    description: `Professional and efficient installation services ensuring optimal performance and longevity of your solar systems.`,
-    imageUrl: "/package.png",
-  },
-  {
-    title: "PROCUREMENT",
-    description: `Professional and efficient installation services ensuring optimal performance and longevity of your solar systems.`,
-    imageUrl: "/package.png",
-  },
-  {
-    title: "MAINTENANCE",
-    description: `Professional and efficient installation services ensuring optimal performance and longevity of your solar systems.`,
-    imageUrl: "/package.png",
-  },
-  {
-    title: "PROJECT MANAGEMENT",
-    description: `Professional and efficient installation services ensuring optimal performance and longevity of your solar systems.`,
-    imageUrl: "/package.png",
-  },
-  {
-    title: "PROJECT CONSULTATION",
-    description: `Professional and efficient installation services ensuring optimal performance and longevity of your solar systems.`,
-    imageUrl: "/package.png",
-  },
-  {
-    title: "TROUBLESHOOTING AND TECHNICAL SUPPORT",
-    description: `Professional and efficient installation services ensuring optimal performance and longevity of your solar systems.`,
-    imageUrl: "/package.png",
-  },
-  {
-    title: "EXCLUSIVE MENTORING",
-    description: `Professional and efficient installation services ensuring optimal performance and longevity of your solar systems.`,
-    imageUrl: "/package.png",
-  },
-  {
-    title: "TRAINING AND SEMINARS",
-    description: `Professional and efficient installation services ensuring optimal performance and longevity of your solar systems.`,
-    imageUrl: "/package.png",
-  },
-];
-
-export const JFLTeamMembers = [
-  {
-    imageUrl: "/team-jf.jpg",
-    name: "JF Legaspi",
-    position: "CEO / Founder",
-    description: `"A visionary leader with extensive experience in the global solar industry, committed to advancing renewable energy solutions in the Philippines."`,
-  },
-  {
-    imageUrl: "/team-john.jpg",
-    name: "John Bergueles",
-    position: "CCO (Sales and Marketing)",
-    description: `"A dynamic strategist driving business growth through effective sales initiatives and impactful marketing campaigns."`,
-  },
-  {
-    imageUrl: "/team-jay.jpg",
-    name: "Jay Escander",
-    position: "CTO",
-    description: `"An innovative technical expert specializing in designing and implementing efficient and reliable solar PV systems."`,
-  },
-];
-
-export const FeaturesData = [
-  {
-    title: "European Quality Standards",
-    description: `We adhere to stringent European quality benchmarks, ensuring superior workmanship and durable solutions.`,
-    icon: Award,
-  },
-  {
-    title: "Expertise and Experience",
-    description: `Our team brings international experience and deep technical knowledge, guaranteeing innovative and effective solutions.`,
-    icon: Bulb,
-  },
-  {
-    title: "Comprehensive Services",
-    description: `From procurement to maintenance, we offer end-to-end services tailored to meet diverse energy needs.`,
-    icon: Settings,
-  },
-  {
-    title: "Customer-Centric Approach",
-    description: `We prioritize our clients' satisfaction, offering personalized services and ongoing support throughout your solar journey.`,
-    icon: Users,
-  },
-  {
-    title: "Technical Support for DIY Enthusiasts",
-    description: `Our team brings international experience and deep technical knowledge, guaranteeing innovative and effective solutions.`,
-    icon: HeartHandshake,
-  },
-  {
-    title: "Commitment to Sustainability",
-    description: `Our solutions are designed to promote environmental stewardship and contribute to a sustainable future.`,
-    icon: Tree,
   },
 ];
 

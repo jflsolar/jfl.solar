@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import React from "react";
-import CustomButton from "../CustomButton";
+import CustomButton from "../shared/CustomButton";
 import { useRouter } from "next/navigation";
 import { formatCurrency } from "@/lib/utils";
 
