@@ -167,7 +167,7 @@ const MobileNav = () => {
             src="/logo.png"
             width={200}
             height={60}
-            alt="jfl logo"
+            alt="Empowering the Philippines, one roof at a time."
             className=""
           />
         </Link>

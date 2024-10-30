@@ -9,7 +9,8 @@ const AboutFounder = () => {
           src={"/about-founder.png"}
           width={720}
           height={700}
-          alt="cover"
+          loading="lazy"
+          alt="JF Legaspi - Founder of JFL Solar"
           className="section-image"
         />
       </div>

@@ -14,7 +14,8 @@ const Packages = () => {
           src={"/hybrid-6kw.png"}
           width={500}
           height={500}
-          alt="cover"
+          alt="Complete Solar PV System Packages"
+          loading="lazy"
           className="object-contain"
         />
       </div>
@@ -23,7 +24,8 @@ const Packages = () => {
           src={"/home-package-bg.png"}
           width={720}
           height={700}
-          alt="cover"
+          alt="Complete Solar PV System Packages"
+          loading="lazy"
           className="size-full object-cover"
         />
       </div>
@@ -37,7 +39,8 @@ const Packages = () => {
               src={"/hybrid-6kw.png"}
               width={250}
               height={250}
-              alt="cover"
+              alt="Complete Solar PV System Packages"
+              loading="lazy"
               className=" object-contain "
             />
           </div>

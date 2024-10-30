@@ -41,6 +41,7 @@ const ProductCard = ({ data }: Props) => {
             height={250}
             width={195}
             alt={title || "package photo"}
+            loading="lazy"
             className="mx-auto min-h-[250px] object-contain drop-shadow-xl"
           />
           {brandUrl && (
@@ -53,6 +54,7 @@ const ProductCard = ({ data }: Props) => {
                 width={100}
                 height={100}
                 alt="brand logo"
+                loading="lazy"
                 className="relative flex min-h-[50px] object-contain"
               />
             </div>

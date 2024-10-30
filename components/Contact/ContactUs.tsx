@@ -67,7 +67,8 @@ const ContactUs = () => {
           src={"/about-jfl.png"}
           width={720}
           height={700}
-          alt="cover"
+          alt="Get a FREE Solar PV Solution Quotation"
+          loading="lazy"
           className="section-image"
         />
       </div>

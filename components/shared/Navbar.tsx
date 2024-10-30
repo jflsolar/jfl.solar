@@ -23,14 +23,14 @@ export default function Navbar() {
               src="/logo.png"
               width={200}
               height={60}
-              alt="jfl logo"
+              alt="JFL Solar - Empowering the Philippines, one roof at a time."
               className="flex max-sm:w-[150px] max-[400px]:hidden"
             />
             <Image
               src="/logo-circle.png"
               width={60}
               height={60}
-              alt="jfl logo"
+              alt="JFL Solar - Empowering the Philippines, one roof at a time."
               className="hidden max-[400px]:flex"
             />
           </Link>

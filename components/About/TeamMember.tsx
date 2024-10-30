@@ -17,7 +17,8 @@ const TeamMember = ({ data }: Props) => {
       <Image
         height={150}
         width={150}
-        alt="profile photo"
+        loading="lazy"
+        alt={`JFL Team: ${name} - ${position}`}
         src={imageUrl}
         className="rounded-full shadow-lg"
       />

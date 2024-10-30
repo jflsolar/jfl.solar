@@ -11,6 +11,7 @@ export default function SignIn() {
             src="/logo.png"
             width={200}
             height={60}
+            loading="lazy"
             alt="jfl logo"
             className="flex max-sm:w-[150px] max-[400px]:hidden"
           />
@@ -18,6 +19,7 @@ export default function SignIn() {
             src="/logo-circle.png"
             width={60}
             height={60}
+            loading="lazy"
             alt="jfl logo"
             className="hidden max-[400px]:flex"
           />

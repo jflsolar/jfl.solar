@@ -23,7 +23,8 @@ const Vision = () => {
           src={"/about-jfl.png"}
           width={720}
           height={700}
-          alt="cover"
+          loading="lazy"
+          alt={"Oour Vision"}
           className="absolute right-0 top-0 z-0 size-full object-cover lg:w-1/2"
         />
       </div>

@@ -37,6 +37,7 @@ const PackageCard = ({ data }: Props) => {
           height={160}
           width={195}
           alt={title || "package photo"}
+          loading="lazy"
           className="object-contain"
         />
       )}

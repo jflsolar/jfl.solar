@@ -19,6 +19,7 @@ const ServiceCard = ({ data }: Props) => {
           src={imageUrl}
           height={160}
           width={195}
+          loading="lazy"
           alt={title || "package photo"}
           className="object-contain"
         />

@@ -52,23 +52,24 @@ const BatteryDetails = ({ params }: URLProps) => {
 
   return (
     <div className="flex w-full flex-col gap-16 bg-white">
-      <div className="mx-auto flex w-full max-w-5xl flex-col gap-12 py-14 lg:px-0 px-8 tracking-[0.0652em]">
-        <div className="flex gap-x-16 lg:flex-row flex-col">
+      <div className="mx-auto flex w-full max-w-5xl flex-col gap-12 px-8 py-14 tracking-[0.0652em] lg:px-0">
+        <div className="flex flex-col gap-x-16 lg:flex-row">
           {data?.imageUrl && (
             <div className="flex overflow-hidden">
               <Image
                 src={data?.imageUrl}
                 height={3503}
                 width={350}
-                alt="Product Photo"
-                className="object-contain size-full max-sm:max-h-[240px] max-lg:max-h-[360px] "
+                loading="lazy"
+                alt={data?.title}
+                className="size-full object-contain max-lg:max-h-[360px] max-sm:max-h-[240px] "
               />
             </div>
           )}
           <div className="mt-8 flex flex-col gap-4">
             <div className="flex flex-col">
-              <h1 className="md:text-3xl text-2xl font-bold">{data?.title}</h1>
-              <h2 className="md:text-xl text-base text-slate-500">
+              <h1 className="text-2xl font-bold md:text-3xl">{data?.title}</h1>
+              <h2 className="text-base text-slate-500 md:text-xl">
                 {data?.model}
               </h2>
             </div>
@@ -86,7 +87,7 @@ const BatteryDetails = ({ params }: URLProps) => {
               <KeyValueTable
                 input={batteryData}
                 titleWidth={320}
-                className="text-slate-700 text-sm md:text-base"
+                className="text-sm text-slate-700 md:text-base"
                 keyClassName="font-semibold"
                 valueClassName="min-w-[240px]"
               />

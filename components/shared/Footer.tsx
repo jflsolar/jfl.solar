@@ -20,7 +20,7 @@ const Footer = () => {
               src="/logo-light.png"
               width={200}
               height={60}
-              alt="jfl logo"
+              alt="Empowering the Philippines, one roof at a time."
             />
             <span className="text-lg font-thin italic text-slate-100/75 max-md:text-base">{`"Empowering the Philippines, one roof at a time."`}</span>
             <div className="flex items-center justify-center gap-2">

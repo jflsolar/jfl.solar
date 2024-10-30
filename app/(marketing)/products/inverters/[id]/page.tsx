@@ -69,7 +69,8 @@ const InverterDetails = ({ params }: URLProps) => {
                 src={data?.imageUrl}
                 height={3503}
                 width={350}
-                alt="Product Photo"
+                loading="lazy"
+                alt={data?.title}
                 className="size-full object-contain drop-shadow-xl max-lg:max-h-[360px] max-sm:max-h-[240px]"
               />
             </div>

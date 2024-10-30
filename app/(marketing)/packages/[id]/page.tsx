@@ -68,7 +68,8 @@ const HybridPackage = ({ params }: URLProps) => {
                 src={data?.imageUrl}
                 height={3503}
                 width={500}
-                alt="Product Photo"
+                loading="lazy"
+                alt={data?.title}
                 className="size-full object-contain max-lg:max-h-[360px] max-sm:max-h-[240px]"
               />
             </div>

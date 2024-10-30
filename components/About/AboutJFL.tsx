@@ -9,7 +9,7 @@ const AboutJFL = () => {
           src={"/about-jfl.png"}
           width={720}
           height={700}
-          alt="cover"
+          alt="JFL Solar - Reliable Solar PV Solution Provider"
           className="section-image"
         />
       </div>

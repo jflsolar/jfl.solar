@@ -8,7 +8,7 @@ const Hero = () => {
         src={"/bg.png"}
         layout="fill"
         objectFit="cover"
-        alt="hero"
+        alt="PV System Solutions For Residential, Industrial & Commercial"
         priority
       />
       <div className="calibri flex min-h-[90vh] flex-col items-center justify-center gap-1 text-center font-bold text-slate-50">

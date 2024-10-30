@@ -31,7 +31,8 @@ const VisitUs = () => {
                 width={40}
                 height={40}
                 src={"/googlemap.png"}
-                alt="google map"
+                alt="Search us on Google Map"
+                loading="lazy"
                 className="rounded-md border border-slate-200 p-1 text-white"
               />
             </a>

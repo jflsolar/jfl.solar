@@ -18,54 +18,60 @@
 
 // export default Brand
 
-import Image from 'next/image';
-import React from 'react';
+import Image from "next/image";
+import React from "react";
 
 const Brand = () => {
   return (
-    <div className='w-full bg-white px-8 shadow max-[450px]:px-4'>
-      <div className='mx-auto flex w-full max-w-7xl flex-wrap items-center justify-center gap-8 py-10 md:justify-evenly md:gap-4'>
+    <div className="w-full bg-white px-8 shadow max-[450px]:px-4">
+      <div className="mx-auto flex w-full max-w-7xl flex-wrap items-center justify-center gap-8 py-10 md:justify-evenly md:gap-4">
         <Image
-          src={'/brand-deye.png'}
-          alt='deye'
+          src={"/brand-deye.png"}
+          alt="JFL Solar promotes Deye Inverters"
           height={60}
           width={100}
-          className='object-contain'
+          loading="lazy"
+          className="object-contain"
         />
         <Image
-          src={'/brand-ate.png'}
-          alt='alltopelec'
+          src={"/brand-ate.png"}
+          alt="JFL Solar promotes AllTopElec Batteries"
           height={60}
           width={108}
-          className='object-contain'
+          loading="lazy"
+          className="object-contain"
         />
         <Image
-          src={'/brand-seraphim.png'}
-          alt='seraphim'
+          src={"/brand-seraphim.png"}
+          alt="JFL Solar promotes Seraphim Solar Panels"
           height={60}
           width={172}
-          className='object-contain'
+          loading="lazy"
+          className="object-contain"
         />
         <Image
-          src={'/brand-lxp.png'}
-          alt='luxpower'
+          src={"/brand-lxp.png"}
+          alt="JFL Solar promotes LuxPower Inverters"
           height={60}
           width={200}
-          className='object-contain'
+          loading="lazy"
+          className="object-contain"
         />
         <Image
-          src={'/brand-ae.png'}
-          alt='ae solar'
+          src={"/brand-ae.png"}
+          alt="JFL Solar promotes AE Solar Panels"
           height={28}
           width={210}
-          className='object-contain'
+          loading="lazy"
+          className="object-contain"
         />
         <Image
-          src={'/brand-trina.png'}
-          alt='trina'
+          src={"/brand-trina.png"}
+          alt="JFL Solar promotes Trina Solar Panels"
           height={32}
           width={132}
-          className='object-contain'
+          loading="lazy"
+          className="object-contain"
         />
       </div>
     </div>
