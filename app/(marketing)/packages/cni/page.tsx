@@ -59,7 +59,7 @@ const CommercialAndIndustrial = () => {
                 type="link"
                 variant="secondary"
                 className="btn border-white text-white"
-                href="tel:+63976135947"
+                href="tel:+63956935247"
               />
             </div>
           </div>

@@ -22,8 +22,12 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
 
     const data = {
       sender: { email: "info@jflsolar.com", name: "JFL Solar" },
-      to: [{ email: "jflsolar.johnvince@gmail.com", name: "John" }],
-      subject: "New Quotation Request",
+      to: [
+        { email: "jflsolar.johnvince@gmail.com", name: "John" },
+        { email: "jflsolar.jay@gmail.com", name: "Jay" },
+        { email: "jflegaspisolar@gmail.com ", name: "JF Legaspi" },
+      ],
+      subject: "New Quotation Request from Website",
       htmlContent: `
         <h1>New Quotation Request</h1>
         <p><strong>Name:</strong> ${name}</p>
