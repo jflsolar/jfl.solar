@@ -130,7 +130,7 @@ export const HybridDIYPackages: Package[] = [
     ),
     inverter: "1x 6kW Lux Power or Deye Hybrid Inverter",
     battery: "1x 200Ah ATE or LVFU LiFePO4 Battery (10kWh)",
-    panel: "14pcs 550W AE Solar Panels (7.7kWp)",
+    panel: "14pcs 550W Seraphim or AE Solar Panels (7.7kWp)",
     mounting: "Complete Mounting System (End, Mid-Clamps & Railings)",
     safetyDevices:
       "AC and Safety Devices (MCB, PV Iso Switch, SPD, ATS & MCCB)",
@@ -166,7 +166,7 @@ export const HybridDIYPackages: Package[] = [
 
     inverter: "1x 8kW Lux Power or Deye Hybrid Inverter",
     battery: "1x 300Ah ATE or Wipuvo LiFePO4 Battery (15kWh)",
-    panel: "16pcs 550W AE Solar Panels (8.8kWp)",
+    panel: "16pcs 550W Seraphim or AE Solar Panels (8.8kWp)",
     mounting: "Complete Mounting System (End, Mid-Clamps & Railings)",
     safetyDevices:
       "AC and Safety Devices (MCB, PV Iso Switch, SPD, ATS & MCCB)",
@@ -180,7 +180,39 @@ export const HybridDIYPackages: Package[] = [
     redirectLink: "/packages/hybrid-8kw",
     quoteLink: "/quotation?type=hybrid&system=8",
   },
-
+  {
+    id: "hybrid-10kw",
+    title: "10kw Hybrid On/Off-Grid",
+    description: (
+      <ul className="flex flex-col items-center">
+        <li className="flex items-center gap-1">
+          <Check size={18} /> 10kw Hybrid Inverter
+        </li>
+        <li className="flex items-center gap-1">
+          <Check size={18} /> 15kWh LiFePO4 Battery
+        </li>
+        <li className="flex items-center gap-1">
+          <Check size={18} /> 9.9kWp Solar Panels
+        </li>
+      </ul>
+    ),
+    inverter: "1x 10kW Lux Power Hybrid Inverter",
+    battery: "1x 300Ah ATE or Wipuvo LiFePO4 Battery (15kWh)",
+    panel: "18pcs 550W Seraphim or AE Solar Panels (9.9kWp)",
+    mounting: "Complete Mounting System (End, Mid-Clamps & Railings)",
+    safetyDevices:
+      "AC and Safety Devices (MCB, PV Iso Switch, SPD, ATS & MCCB)",
+    cables: "Cables and Wires (PV Cable, Battery Cable & THHN Wire)",
+    accessories:
+      "Accessories (Cable Tray, Enclosure Box, MC4 Connectors, Ground Rod, Flexible Conduit)",
+    annualProd: "14,500 kWh",
+    estimatedROI: "2.2 - 3 yrs",
+    price: "₱400,000",
+    imageUrl: "/hybrid-12kw.png",
+    buttonText: "View Details",
+    redirectLink: "/packages/hybrid-10kw",
+    quoteLink: "/quotation?type=hybrid&system=10",
+  },
   {
     id: "hybrid-12kw",
     title: "12kw Hybrid On/Off-Grid",
@@ -198,8 +230,8 @@ export const HybridDIYPackages: Package[] = [
       </ul>
     ),
     inverter: "1x 12kW Lux Power or Deye Hybrid Inverter",
-    battery: "1x 300Ah ATE or LVFU LiFePO4 Battery (15kWh)",
-    panel: "20pcs 550W AE Solar Panels (11kWp)",
+    battery: "1x 300Ah ATE or Wipuvo LiFePO4 Battery (15kWh)",
+    panel: "20pcs 550W Seraphim or AE Solar Panels (11kWp)",
     mounting: "Complete Mounting System (End, Mid-Clamps & Railings)",
     safetyDevices:
       "AC and Safety Devices (MCB, PV Iso Switch, SPD, ATS & MCCB)",
@@ -208,7 +240,7 @@ export const HybridDIYPackages: Package[] = [
       "Accessories (Cable Tray, Enclosure Box, MC4 Connectors, Ground Rod, Flexible Conduit)",
     annualProd: "16,000 kWh",
     estimatedROI: "2.2 - 3 yrs",
-    price: "₱420,000",
+    price: "₱450,000",
     imageUrl: "/hybrid-12kw.png",
     buttonText: "View Details",
     redirectLink: "/packages/hybrid-12kw",
@@ -231,8 +263,8 @@ export const HybridDIYPackages: Package[] = [
         </li>
       </ul>
     ),
-    inverter: "1x 16kw Lux Power or Deye Hybrid Inverter",
-    battery: "1x 300Ah ATE or LVFU LiFePO4 Battery (15kWh)",
+    inverter: "1x 16kw Deye Hybrid Inverter",
+    battery: "1x 300Ah ATE or Wipuvo LiFePO4 Battery (15kWh)",
     panel: "27pcs 580W Seraphim Solar Panels (15.6kWp)",
     mounting: "Complete Mounting System (End, Mid-Clamps & Railings)",
     safetyDevices:

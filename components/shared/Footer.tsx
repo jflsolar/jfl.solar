@@ -76,14 +76,16 @@ const Footer = () => {
                 <li>
                   <Link href={"/packages/gridtied"}>Grid-tied / On-grid</Link>
                 </li>
-                {/* <li>
-                  <Link href={"/about"}>Residential PV Systems</Link>
+                <li>
+                  <Link href={"/packages/residential"}>
+                    Residential PV Systems
+                  </Link>
                 </li>
                 <li>
-                  <Link href={"/about"}>
+                  <Link href={"/packages/cni"}>
                     Commercial & Industrial PV Systems
-                  </Link> */}
-                {/* </li> */}
+                  </Link>
+                </li>
               </ul>
             </div>
             <div className="flex flex-col gap-6 max-sm:items-center">

@@ -20,6 +20,7 @@ import {
   navigationMenuTriggerStyle,
 } from "../ui/navigation-menu";
 import { Menu2 } from "tabler-icons-react";
+import { DotIcon } from "@radix-ui/react-icons";
 
 const NavContent = () => {
   return (
@@ -40,7 +41,7 @@ const NavContent = () => {
         <NavigationMenuItem>
           <NavigationMenuTrigger>PV Packages</NavigationMenuTrigger>
           <NavigationMenuContent className="">
-            <div className="w-full rounded-lg bg-slate-50 p-4">
+            <div className="w-[350px] rounded-lg bg-slate-50 p-4 max-[350px]:w-full">
               <h4 className="text-lg font-bold">Pro-DIY</h4>
               <div className="flex flex-col gap-1 pl-4">
                 <NavigationMenuLink href="/packages/hybrid">
@@ -50,7 +51,9 @@ const NavContent = () => {
                   Grid-tied / On-Grid{" "}
                 </NavigationMenuLink>
               </div>
-              {/* <h4 className="text-lg font-bold">With Installation Packages</h4>
+              <h4 className="mt-4 text-lg font-bold">
+                With Installation Packages
+              </h4>
               <div className="flex flex-col gap-1 pl-4">
                 <NavigationMenuLink href="/packages/residential">
                   Residential PV Systems
@@ -58,15 +61,15 @@ const NavContent = () => {
                 <NavigationMenuLink href="/packages/cni">
                   Commercial & Indsutrial PV Systems
                 </NavigationMenuLink>
-              </div> */}
+              </div>
             </div>
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuTrigger>Products</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <div className="w-[480px] rounded-lg bg-slate-50 p-4">
-              <div className="flex gap-4">
+            <div className="w-[480px] rounded-lg bg-slate-50 p-4 max-[480px]:w-full">
+              <div className="flex gap-4  max-[480px]:flex-col">
                 <div className="flex flex-col gap-2 rounded p-2 hover:bg-slate-100">
                   <div className="flex flex-col">
                     <NavigationMenuLink href="/products/inverters">
@@ -76,18 +79,19 @@ const NavContent = () => {
                       </p>
                     </NavigationMenuLink>
                   </div>
-                  <div className="ml-2 flex flex-col gap-1 text-base font-bold">
+                  <div className="flex flex-col gap-1 text-base font-bold">
                     <NavigationMenuLink
                       href="/products/inverters/hybrid"
-                      className="w-fit hover:underline"
+                      className="flex w-fit items-center gap-1 hover:underline"
                     >
+                      <DotIcon />
                       Hybrid On/Off Grid
                     </NavigationMenuLink>
                     <NavigationMenuLink
                       href="/products/inverters/gridtied"
-                      className="w-fit hover:underline"
+                      className="flex w-fit items-center gap-1 hover:underline"
                     >
-                      Grid-tied Inverters
+                      <DotIcon /> Grid-tied Inverters
                     </NavigationMenuLink>
                   </div>
                 </div>
