@@ -86,6 +86,7 @@ const HybridPackage = ({ params }: URLProps) => {
                 Limited Offer!
               </span>
             </div>
+            <span className="text-slate-400">**VAT Exclusive</span>
             <div className="mt-8">
               <KeyValueTable
                 input={inverterData}

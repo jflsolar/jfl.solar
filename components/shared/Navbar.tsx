@@ -49,8 +49,8 @@ export default function Navbar() {
             <NavigationMenuItem className="max-lg:hidden">
               <NavigationMenuTrigger>PV Packages</NavigationMenuTrigger>
               <NavigationMenuContent>
-                <div className="w-[240px] rounded-lg bg-slate-50 p-4">
-                  {/* <h4 className="text-lg font-bold">Pro-DIY</h4> */}
+                <div className="w-[300px] rounded-lg bg-slate-50 p-4">
+                  <h4 className="text-lg font-bold">Pro-DIY</h4>
                   <div className="flex flex-col gap-1 pl-4">
                     <NavigationMenuLink href="/packages/hybrid">
                       Hybrid On/Off Grid
@@ -59,7 +59,7 @@ export default function Navbar() {
                       Grid-tied / On-Grid{" "}
                     </NavigationMenuLink>
                   </div>
-                  {/* <h4 className="text-lg font-bold">
+                  <h4 className="text-lg font-bold">
                     With Installation Packages
                   </h4>
                   <div className="flex flex-col gap-1 pl-4">
@@ -69,7 +69,7 @@ export default function Navbar() {
                     <NavigationMenuLink href="/packages/cni">
                       Commercial & Indsutrial PV Systems
                     </NavigationMenuLink>
-                  </div> */}
+                  </div>
                 </div>
               </NavigationMenuContent>
             </NavigationMenuItem>

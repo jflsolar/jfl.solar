@@ -15,10 +15,12 @@ const InverterDetails = ({ params }: URLProps) => {
 
   const inverterData: TableDetailProps = {
     data: {
-      maxPower: {
-        title: "Max. PV Input Power (W)",
-        value: data?.maxPower,
-      },
+      ...(data?.maxPower && {
+        maxPower: {
+          title: "Max. PV Input Power (W)",
+          value: data?.maxPower,
+        },
+      }),
       maxVoltage: {
         title: "Max. PV Input Voltage (V)",
         value: data?.maxVoltage,
