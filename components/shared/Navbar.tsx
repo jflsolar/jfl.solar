@@ -49,7 +49,7 @@ export default function Navbar() {
             <NavigationMenuItem className="max-lg:hidden">
               <NavigationMenuTrigger>PV Packages</NavigationMenuTrigger>
               <NavigationMenuContent>
-                <div className="w-[300px] rounded-lg bg-slate-50 p-4">
+                <div className="w-[350px] rounded-lg bg-slate-50 p-4">
                   <h4 className="text-lg font-bold">Pro-DIY</h4>
                   <div className="flex flex-col gap-1 pl-4">
                     <NavigationMenuLink href="/packages/hybrid">
