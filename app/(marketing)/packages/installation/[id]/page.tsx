@@ -157,7 +157,7 @@ const HybridPackage = ({ params }: URLProps) => {
               return (
                 <PackageCard
                   key={`package-${index}`}
-                  type={"DIY"}
+                  type={"Installation"}
                   data={item}
                 />
               );
