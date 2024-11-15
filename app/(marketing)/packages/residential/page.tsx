@@ -5,8 +5,8 @@ import React from "react";
 const ResidentialPackages = () => {
   return (
     <div className="flex w-full flex-col gap-16 bg-white">
-      <HybridPackages />
-      <GridTiedPackages />
+      <HybridPackages type="Installation" />
+      <GridTiedPackages type="Installation" />
     </div>
   );
 };

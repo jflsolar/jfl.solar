@@ -34,7 +34,7 @@ const CommercialAndIndustrial = () => {
             grid..
           </p>
           <p className="paragraph-base max-w-3xl">
-            {`Book a call with our experts to start your custom solar package. We're here to help!.`}
+            {`Book a call with our experts to start your custom solar package. We're here to help!`}
           </p>
           <div className="flex flex-col items-center gap-12">
             <CustomButton

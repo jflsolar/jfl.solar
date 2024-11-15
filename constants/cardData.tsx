@@ -111,10 +111,11 @@ export const FeaturesData = [
   },
 ];
 
-export const HybridDIYPackages: Package[] = [
+export const HybridPackagesData: Package[] = [
   {
     id: "hybrid-6kw",
-    title: "6kW Hybrid On/Off-Grid",
+    title: "6kW Hybrid On/Off-Grid Package",
+    size: "6kW",
     description: (
       <ul className="flex flex-col items-center">
         <li className="flex items-center gap-1">
@@ -139,16 +140,18 @@ export const HybridDIYPackages: Package[] = [
       "Accessories (Cable Tray, Enclosure Box, MC4 Connectors, Ground Rod, Flexible Conduit)",
     annualProd: "11,000 kWh",
     estimatedROI: "2.5 - 3 yrs",
-    price: "₱250,000",
+    priceDIY: "₱250,000",
+    priceWithInstallation: "₱310,000",
     imageUrl: "/hybrid-6kw.png",
     buttonText: "View Details",
-    redirectLink: "/packages/hybrid-6kw",
+    redirectLinkDIY: "/packages/diy/hybrid-6kw?",
+    redirectLinkInstallation: "/packages/installation/hybrid-6kw?",
     quoteLink: "/quotation?type=hybrid&system=6",
   },
-
   {
     id: "hybrid-8kw",
-    title: "8kW Hybrid DIY Package",
+    size: "8kW",
+    title: "8kW Hybrid On/Off-Grid Package",
     annualProd: "12,500 kWh",
     description: (
       <ul className="flex flex-col items-center">
@@ -163,7 +166,6 @@ export const HybridDIYPackages: Package[] = [
         </li>
       </ul>
     ),
-
     inverter: "1x 8kW Lux Power or Deye Hybrid Inverter",
     battery: "1x 300Ah ATE or Wipuvo LiFePO4 Battery (15kWh)",
     panel: "16pcs 550W Seraphim or AE Solar Panels (8.8kWp)",
@@ -174,15 +176,18 @@ export const HybridDIYPackages: Package[] = [
     accessories:
       "Accessories (Cable Tray, Enclosure Box, MC4 Connectors, Ground Rod, Flexible Conduit)",
     estimatedROI: "2.3 - 3 yrs",
-    price: "₱350,000",
+    priceDIY: "₱350,000",
+    priceWithInstallation: "₱430,000",
     imageUrl: "/hybrid-8kw.png",
     buttonText: "View Details",
-    redirectLink: "/packages/hybrid-8kw",
+    redirectLinkDIY: "/packages/diy/hybrid-8kw?",
+    redirectLinkInstallation: "/packages/installation/hybrid-8kw?",
     quoteLink: "/quotation?type=hybrid&system=8",
   },
   {
     id: "hybrid-10kw",
-    title: "10kw Hybrid On/Off-Grid",
+    title: "10kw Hybrid On/Off-Grid Package",
+    size: "10kW",
     description: (
       <ul className="flex flex-col items-center">
         <li className="flex items-center gap-1">
@@ -207,15 +212,18 @@ export const HybridDIYPackages: Package[] = [
       "Accessories (Cable Tray, Enclosure Box, MC4 Connectors, Ground Rod, Flexible Conduit)",
     annualProd: "14,500 kWh",
     estimatedROI: "2.2 - 3 yrs",
-    price: "₱400,000",
+    priceDIY: "₱400,000",
+    priceWithInstallation: "₱500,000",
     imageUrl: "/hybrid-12kw.png",
     buttonText: "View Details",
-    redirectLink: "/packages/hybrid-10kw",
+    redirectLinkDIY: "/packages/diy/hybrid-10kw?",
+    redirectLinkInstallation: "/packages/installation/hybrid-10kw?",
     quoteLink: "/quotation?type=hybrid&system=10",
   },
   {
     id: "hybrid-12kw",
-    title: "12kw Hybrid On/Off-Grid",
+    title: "12kw Hybrid On/Off-Grid Pacakage",
+    size: "12kW",
     description: (
       <ul className="flex flex-col items-center">
         <li className="flex items-center gap-1">
@@ -240,16 +248,19 @@ export const HybridDIYPackages: Package[] = [
       "Accessories (Cable Tray, Enclosure Box, MC4 Connectors, Ground Rod, Flexible Conduit)",
     annualProd: "16,000 kWh",
     estimatedROI: "2.2 - 3 yrs",
-    price: "₱450,000",
+    priceDIY: "₱450,000",
+    priceWithInstallation: "₱570,000",
     imageUrl: "/hybrid-12kw.png",
     buttonText: "View Details",
-    redirectLink: "/packages/hybrid-12kw",
+    redirectLinkDIY: "/packages/diy/hybrid-12kw?",
+    redirectLinkInstallation: "/packages/installation/hybrid-12kw?",
     quoteLink: "/quotation?type=hybrid&system=12",
   },
 
   {
     id: "hybrid-16kw",
-    title: "16kw Hybrid On/Off-Grid",
+    title: "16kw Hybrid On/Off-Grid Pacakage",
+    size: "16kW",
     description: (
       <ul className="flex flex-col items-center">
         <li className="flex items-center gap-1">
@@ -274,18 +285,21 @@ export const HybridDIYPackages: Package[] = [
       "Accessories (Cable Tray, Enclosure Box, MC4 Connectors, Ground Rod, Flexible Conduit)",
     annualProd: "22,800 kWh",
     estimatedROI: "2 - 2.5 yrs",
-    price: "₱520,000",
+    priceDIY: "₱520,000",
+    priceWithInstallation: "₱680,000",
     imageUrl: "/hybrid-16kw.png",
     buttonText: "View Details",
-    redirectLink: "/packages/hybrid-16kw",
+    redirectLinkDIY: "/packages/diy/hybrid-16kw?",
+    redirectLinkInstallation: "/packages/installation/hybrid-16kw?",
     quoteLink: "/quotation?type=hybrid&system=16",
   },
 ];
 
-export const GridTiedDIYPackages: Package[] = [
+export const GridTiedPackagesData: Package[] = [
   {
     id: "grid-tied-6kw",
-    title: "6kW Grid-tied DIY Package",
+    title: "6kW Grid-tied Package",
+    size: "6kW",
     description: `includes a 6kW grid-tied inverter, 6.6kWp solar panels, mounting system, safety devices, and all necessary cables and accessories. FREE Technical Support (PV System Design, Parameter Settings & Troubleshooting) (Note: Net Metering not Included)`,
     inverter: "1x 6kW Deye Grid-tied Inverter",
     panel: "14pcs 550W AE Solar Panels (7.7kWp)",
@@ -295,19 +309,25 @@ export const GridTiedDIYPackages: Package[] = [
     cables: "Cables and Wires (PV Cable, Battery Cable & THHN Wire)",
     accessories:
       "Accessories (Cable Tray, Enclosure Box, MC4 Connectors, Ground Rod, Flexible Conduit)",
-    price: "Starts at ₱152,240",
+    priceDIY: "Starts at ₱160,000",
+    priceWithInstallation: "Starts at ₱220,000",
     imageUrl: "/package-gridtied.png",
     buttonText: "Get a Quote",
-    redirectLink: "/quotation?type=gridtied&system=6kW",
+    redirectLinkDIY: "/quotation?type=gridtied&system=6kW",
+    redirectLinkInstallation: "/quotation?type=gridtied&system=6kW",
     quoteLink: "/quotation?type=gridtied&system=6kW",
   },
   {
-    title: "10kW Grid-tied DIY Package",
+    title: "10kW Grid-tied Package",
+    size: "10kW",
     description: `includes a 10kW grid-tied inverter, 10.44kWp solar panels, mounting system, safety devices, and all necessary cables and accessories. FREE Technical Support (PV System Design, Parameter Settings & Troubleshooting) (Note: Net Metering not Included)`,
-    price: "Starts at ₱216,330",
+    priceDIY: "Starts at ₱220,000",
+    priceWithInstallation: "Starts at ₱310,000",
     imageUrl: "/package-gridtied.png",
     buttonText: "Get a Quote",
-    redirectLink: "/quotation?type=gridtied&system=10kW",
+    redirectLinkDIY: "/quotation?type=gridtied&system=10kW",
+    redirectLinkInstallation: "/quotation?type=gridtied&system=10kW",
+    quoteLink: "/quotation?type=gridtied&system=10kW",
   },
 ];
 

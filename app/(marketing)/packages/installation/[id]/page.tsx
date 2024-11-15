@@ -3,7 +3,7 @@
 import PackageCard from "@/components/Cards/PackageCard";
 import CustomButton from "@/components/shared/CustomButton";
 import KeyValueTable from "@/components/shared/KeyValueTable";
-import { GridTiedDIYPackages, HybridDIYPackages } from "@/constants/cardData";
+import { GridTiedPackagesData, HybridPackagesData } from "@/constants/cardData";
 import { EMAIL_ADDRESS } from "@/constants/constant";
 import { formatCurrency } from "@/lib/utils";
 import { TableDetailProps, URLProps } from "@/types";
@@ -13,7 +13,7 @@ import React from "react";
 
 const HybridPackage = ({ params }: URLProps) => {
   const router = useRouter();
-  const data = [...HybridDIYPackages, ...GridTiedDIYPackages].find(
+  const data = [...HybridPackagesData, ...GridTiedPackagesData].find(
     (item) => item.id === params?.id
   );
 
@@ -77,16 +77,22 @@ const HybridPackage = ({ params }: URLProps) => {
           <div className="mt-8 flex flex-col gap-4">
             <div className="flex flex-col">
               <h1 className="text-2xl font-bold md:text-3xl">{data?.title}</h1>
+              <h2 className="text-xl font-medium text-slate-500 md:text-2xl">
+                With Complete Installation
+              </h2>
             </div>
             <div className="flex flex-row gap-2">
               <h3 className="text-3xl font-bold text-brand-yellow max-sm:text-lg 2xl:text-4xl ">
-                {`${formatCurrency(data?.price || 0)}`}
+                {`${formatCurrency(data?.priceWithInstallation || 0)}`}
               </h3>
               <span className="size-fit rounded-full border border-red-400 p-2 text-xs font-black uppercase text-red-400">
                 Limited Offer!
               </span>
             </div>
-            <span className="text-slate-400">**VAT Exclusive</span>
+            <span className="text-slate-400">*VAT Exclusive</span>
+            <span className="text-slate-400">
+              **Price may change depending on the location of installation.
+            </span>
             <div className="mt-8">
               <KeyValueTable
                 input={inverterData}
@@ -146,9 +152,15 @@ const HybridPackage = ({ params }: URLProps) => {
           View More Packages
         </h2>
         <div className="flex flex-wrap justify-evenly gap-12">
-          {HybridDIYPackages.filter((item) => item.id !== params?.id).map(
+          {HybridPackagesData.filter((item) => item.id !== params?.id).map(
             (item, index) => {
-              return <PackageCard key={`package-${index}`} data={item} />;
+              return (
+                <PackageCard
+                  key={`package-${index}`}
+                  type={"DIY"}
+                  data={item}
+                />
+              );
             }
           )}
         </div>

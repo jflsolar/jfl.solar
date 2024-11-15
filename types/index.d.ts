@@ -37,6 +37,7 @@ export type TableDetailProps = {
 export type Package = {
   id?: string;
   title: string;
+  size: string;
   description: React.ReactNode | string;
   inverter?: string;
   battery?: string;
@@ -47,10 +48,12 @@ export type Package = {
   accessories?: string;
   annualProd?: string;
   estimatedROI?: string;
-  price: string;
+  priceDIY: string;
+  priceWithInstallation: string;
   imageUrl: string;
   buttonText: string;
-  redirectLink: string;
+  redirectLinkDIY: string;
+  redirectLinkInstallation: string;
   quoteLink?: string;
 };
 
