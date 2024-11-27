@@ -18,6 +18,8 @@ const PackageCard = ({ type, data }: Props) => {
     description,
     priceDIY,
     priceWithInstallation,
+    discountedPriceDIY,
+    discountedPriceWithInstallation,
     annualProd,
     estimatedROI,
     buttonText,
@@ -26,7 +28,7 @@ const PackageCard = ({ type, data }: Props) => {
     size,
   } = data;
   return (
-    <div className="flex max-w-[320px] flex-col items-center gap-4 p-4">
+    <div className="discountedP4 flex max-w-[320px] flex-col items-center gap-4">
       {imageUrl && (
         <div className="relative min-h-[250px] w-full">
           <Image
@@ -58,14 +60,18 @@ const PackageCard = ({ type, data }: Props) => {
         <div className="text-center max-sm:text-sm">{description}</div>
       )}
       <div>
-        <p className="text-center max-sm:text-sm">
-          {`Annual Production Forecast: `}
-          <span className="font-bold">{annualProd}</span>
-        </p>
-        <p className="text-center max-sm:text-sm">
-          {`Estimated ROI: `}
-          <span className="font-bold">{estimatedROI}</span>
-        </p>
+        {annualProd && (
+          <p className="text-center max-sm:text-sm">
+            {`Annual Production Forecast: `}
+            <span className="font-bold">{annualProd}</span>
+          </p>
+        )}
+        {estimatedROI && (
+          <p className="text-center max-sm:text-sm">
+            {`Estimated ROI: `}
+            <span className="font-bold">{estimatedROI}</span>
+          </p>
+        )}
         {type === "Installation" && (
           <p className="mt-2 text-center font-bold uppercase text-brand-yellow max-sm:text-sm">
             Complete w/ Installation
@@ -75,9 +81,16 @@ const PackageCard = ({ type, data }: Props) => {
       {type === "Installation" ? (
         <>
           {priceWithInstallation && (
-            <span className="text-center text-xl font-bold text-brand-blue max-sm:text-base 2xl:text-2xl">
-              {priceWithInstallation}
-            </span>
+            <div className="flex flex-col items-center">
+              {discountedPriceWithInstallation && (
+                <span className="text-lg text-red-500 line-through max-sm:text-sm">
+                  {priceWithInstallation}
+                </span>
+              )}
+              <span className="text-center text-xl font-bold text-brand-blue max-sm:text-lg 2xl:text-2xl">
+                {discountedPriceWithInstallation || priceWithInstallation}
+              </span>
+            </div>
           )}
           {buttonText && redirectLinkInstallation && (
             <CustomButton
@@ -90,9 +103,16 @@ const PackageCard = ({ type, data }: Props) => {
       ) : (
         <>
           {priceDIY && (
-            <span className="text-center text-xl font-bold text-brand-blue max-sm:text-base 2xl:text-2xl">
-              {priceDIY}
-            </span>
+            <div className="flex flex-col items-center">
+              {discountedPriceDIY && (
+                <span className="text-lg text-red-500 line-through max-sm:text-sm">
+                  {priceDIY}
+                </span>
+              )}
+              <span className="text-center text-xl font-bold text-brand-blue max-sm:text-lg 2xl:text-2xl">
+                {discountedPriceDIY || priceDIY}
+              </span>
+            </div>
           )}
           {buttonText && redirectLinkDIY && (
             <CustomButton

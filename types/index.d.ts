@@ -50,6 +50,8 @@ export type Package = {
   estimatedROI?: string;
   priceDIY: string;
   priceWithInstallation: string;
+  discountedPriceDIY: string;
+  discountedPriceWithInstallation: string;
   imageUrl: string;
   buttonText: string;
   redirectLinkDIY: string;

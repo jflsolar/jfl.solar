@@ -1,15 +1,22 @@
 "use client";
 
 import PackageCard from "@/components/Cards/PackageCard";
+import CountdownTimer from "@/components/shared/CountdownTimer";
 import CustomButton from "@/components/shared/CustomButton";
 import KeyValueTable from "@/components/shared/KeyValueTable";
 import { GridTiedPackagesData, HybridPackagesData } from "@/constants/cardData";
-import { EMAIL_ADDRESS } from "@/constants/constant";
+import { EMAIL_ADDRESS, PRICE_INCREASE } from "@/constants/constant";
 import { formatCurrency } from "@/lib/utils";
 import { TableDetailProps, URLProps } from "@/types";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import React from "react";
+import dayjs from "dayjs";
+import utc from "dayjs/plugin/utc";
+import timezone from "dayjs/plugin/timezone";
+
+dayjs.extend(utc);
+dayjs.extend(timezone);
 
 const HybridPackage = ({ params }: URLProps) => {
   const router = useRouter();
@@ -81,14 +88,32 @@ const HybridPackage = ({ params }: URLProps) => {
                 With Complete Installation
               </h2>
             </div>
-            <div className="flex flex-row gap-2">
+            <div className="flex flex-row items-center gap-2">
               <h3 className="text-3xl font-bold text-brand-yellow max-sm:text-lg 2xl:text-4xl ">
-                {`${formatCurrency(data?.priceWithInstallation || 0)}`}
+                {`${formatCurrency(data?.discountedPriceWithInstallation || data?.priceWithInstallation || 0)}`}
               </h3>
-              <span className="size-fit rounded-full border border-red-400 p-2 text-xs font-black uppercase text-red-400">
+              <span className="text-2xl text-slate-500 line-through max-sm:text-sm">
+                {data?.priceWithInstallation}
+              </span>
+              <span className="size-fit rounded-full border border-red-500 p-2 text-xs font-black uppercase text-red-500">
                 Limited Offer!
               </span>
             </div>
+            {data?.discountedPriceWithInstallation && (
+              <div className="flex flex-col gap-2 text-slate-400">
+                <span className="text-sm">
+                  The price will revert to its regular rate in{" "}
+                </span>
+                <span className="text-xl font-bold text-red-500">
+                  <CountdownTimer
+                    targetDate={dayjs(PRICE_INCREASE)
+                      .tz("Asia/Manila")
+                      .endOf("day")
+                      .toDate()}
+                  />
+                </span>
+              </div>
+            )}
             <span className="text-slate-400">*VAT Exclusive</span>
             <span className="text-slate-400">
               **Price may change depending on the location of installation.

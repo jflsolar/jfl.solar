@@ -5,7 +5,9 @@ import React from "react";
 const Packages = () => {
   return (
     <div className="flex w-full flex-col gap-16 bg-white">
+      <HybridPackages type="Installation" />
       <HybridPackages type="DIY" />
+      <GridTiedPackages type="Installation" />
       <GridTiedPackages type="DIY" />
     </div>
   );
