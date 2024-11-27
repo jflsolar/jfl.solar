@@ -43,25 +43,25 @@ export default function MarketingLayout({
         name="promo-banner"
         variant="warning"
         description={
-          <div className="flex items-center gap-2 font-medium text-brand-blue">
-            Limited offer ends in{" "}
-            <span className="font-bold text-brand-blue">
+          <div className="flex flex-wrap items-center justify-center gap-1 whitespace-nowrap text-center text-sm font-medium text-brand-blue max-sm:text-xs lg:text-base">
+            Limited offer ends in
+            <span className="flex font-bold text-brand-blue">
               <CountdownTimer
                 targetDate={dayjs(PRICE_INCREASE)
                   .tz("Asia/Manila")
                   .endOf("day")
                   .toDate()}
               />
+              !
             </span>
-            ! Take advantage of our packages now and{" "}
-            <span className="font-bold text-brand-blue">
-              save up to ₱50,000!
-            </span>
+            Get
+            <span className="font-bold text-brand-blue">₱50,000 discount</span>
+            on our packages
             <Link
               href="/packages"
               className="font-bold text-brand-blue underline"
             >
-              Click here
+              here
             </Link>{" "}
           </div>
         }
