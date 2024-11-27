@@ -25,6 +25,7 @@
     "@types/googlemaps": "^3.43.3",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "cross-spawn": "7.0.6",
     "crypto-js": "^4.2.0",
     "dayjs": "^1.11.13",
     "dayjs-plugin-utc": "^0.1.2",
