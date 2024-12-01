@@ -2,13 +2,13 @@ import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 import React from "react";
 import Head from "next/head";
-import MarketingBanner from "@/components/shared/MarketingBanner";
-import CountdownTimer from "@/components/shared/CountdownTimer";
-import { PRICE_INCREASE } from "@/constants/constant";
+// import MarketingBanner from "@/components/shared/MarketingBanner";
+// import CountdownTimer from "@/components/shared/CountdownTimer";
+// import { PRICE_INCREASE } from "@/constants/constant";
 import dayjs from "dayjs";
 import utc from "dayjs/plugin/utc";
 import timezone from "dayjs/plugin/timezone";
-import Link from "next/link";
+// import Link from "next/link";
 
 dayjs.extend(utc);
 dayjs.extend(timezone);
@@ -39,7 +39,7 @@ export default function MarketingLayout({
           }}
         />
       </Head>
-      <MarketingBanner
+      {/* <MarketingBanner
         name="promo-banner"
         variant="warning"
         description={
@@ -65,7 +65,7 @@ export default function MarketingLayout({
             </Link>{" "}
           </div>
         }
-      />
+      /> */}
       <Navbar />
       {children}
       <Footer />
