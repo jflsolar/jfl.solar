@@ -92,12 +92,16 @@ const HybridPackage = ({ params }: URLProps) => {
               <h3 className="text-3xl font-bold text-brand-yellow max-sm:text-lg 2xl:text-4xl ">
                 {`${formatCurrency(data?.discountedPriceDIY || data?.priceDIY || 0)}`}
               </h3>
-              <span className="text-2xl text-slate-500 line-through max-sm:text-sm">
-                {data?.priceDIY}
-              </span>
-              <span className="size-fit rounded-full border border-red-500 p-2 text-xs font-black uppercase text-red-500">
-                Limited Offer!
-              </span>
+              {data?.discountedPriceDIY && (
+                <>
+                  <span className="text-2xl text-slate-500 line-through max-sm:text-sm">
+                    {data?.priceDIY}
+                  </span>
+                  <span className="size-fit rounded-full border border-red-500 p-2 text-xs font-black uppercase text-red-500">
+                    Limited Offer!
+                  </span>
+                </>
+              )}
             </div>
 
             {data?.discountedPriceDIY && (
