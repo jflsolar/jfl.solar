@@ -42,8 +42,6 @@ export const authOptions: NextAuthOptions = {
   adapter: PrismaAdapter(db),
   callbacks: {
     async jwt({ token, user }) {
-      console.log("token", token);
-      console.log("user", user);
       if (user && "role" in user) {
         token.id = user.id;
         token.role = user.role;
