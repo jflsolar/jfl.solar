@@ -88,7 +88,7 @@ const HybridPackage = ({ params }: URLProps) => {
                 DIY (Do It Yourself) Setup
               </h2>
             </div>
-            <div className="flex flex-row items-center gap-2">
+            <div className="flex flex-row flex-wrap items-center gap-2">
               <h3 className="text-3xl font-bold text-brand-yellow max-sm:text-lg 2xl:text-4xl ">
                 {`${formatCurrency(data?.discountedPriceDIY || data?.priceDIY || 0)}`}
               </h3>
@@ -98,7 +98,7 @@ const HybridPackage = ({ params }: URLProps) => {
                     {data?.priceDIY}
                   </span>
                   <span className="size-fit rounded-full border border-red-500 p-2 text-xs font-black uppercase text-red-500">
-                    Limited Offer!
+                    Limited Time Offer!
                   </span>
                 </>
               )}

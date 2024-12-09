@@ -98,7 +98,7 @@ const HybridPackage = ({ params }: URLProps) => {
                     {data?.priceWithInstallation}
                   </span>
                   <span className="size-fit rounded-full border border-red-500 p-2 text-xs font-black uppercase text-red-500">
-                    Limited Offer!
+                    Limited Time Offer!
                   </span>
                 </>
               )}

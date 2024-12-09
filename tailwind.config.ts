@@ -76,6 +76,25 @@ const config: Config = {
       screens: {
         "3xl": "1600px",
       },
+      animation: {
+        'bounce-left': 'bounce-left 1s infinite',
+      },
+      keyframes: {
+        'bounce-left': {
+          '0%': {
+            transform: 'translateX(25%)',
+            'animation-timing-function': 'cubic-bezier(0.8,0,1,1)'
+          },
+          '50%': {
+            transform: 'none',
+            'animation-timing-function': 'cubic-bezier(0,0,0.2,1)'
+          },
+          '100%': {
+            transform: 'translateX(25%)',
+            'animation-timing-function': 'cubic-bezier(0.8,0,1,1)'
+          },
+        },
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],
