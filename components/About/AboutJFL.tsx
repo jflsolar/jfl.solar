@@ -6,7 +6,7 @@ const AboutJFL = () => {
     <div className="section-container">
       <div className="section-image-container">
         <Image
-          src={"/about-jfl1.jpg"}
+          src={"/about-jfl.jpg"}
           width={720}
           height={700}
           alt="JFL Solar - Reliable Solar PV Solution Provider"

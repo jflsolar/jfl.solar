@@ -64,7 +64,7 @@ const ContactUs = () => {
     <div className="section-container">
       <div className="section-image-container">
         <Image
-          src={"/about-jfl1.jpg"}
+          src={"/contact-us.jpg"}
           width={720}
           height={700}
           alt="Get a FREE Solar PV Solution Quotation"
