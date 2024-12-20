@@ -30,7 +30,7 @@ export default function MarketingLayout({
               logo: "https://www.jflsolar.com/logo-circle.png",
               contactPoint: {
                 "@type": "ContactPoint",
-                telephone: "+63 956 935 2427",
+                telephone: "+63 976 135 9479",
                 contactType: "Customer Service",
               },
               sameAs: ["https://www.facebook.com/jflsolar"],

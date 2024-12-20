@@ -100,7 +100,7 @@ const Footer = () => {
                     stroke="#445974"
                     className="shrink-0 rounded-md bg-[#445974] p-1"
                   />
-                  <span>09569352427</span>
+                  <span>09761359479</span>
                 </li>
                 <li className="flex max-w-[300px] items-center gap-2">
                   <Mail
