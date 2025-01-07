@@ -38,7 +38,7 @@ export default function MarketingLayout({
           }}
         />
       </Head>
-      <MarketingBanner
+      {/* <MarketingBanner
         name="promo-banner"
         variant="custom"
         customClassName="bg-[#c0392b] text-white"
@@ -48,7 +48,7 @@ export default function MarketingLayout({
             <span>
               {dayjs(PRICE_INCREASE).tz("Asia/Manila").format("MMM DD, YYYY")}
             </span>
-            {/* <span className="flex font-bold text-brand-blue">
+            <span className="flex font-bold text-brand-blue">
               <CountdownTimer
                 targetDate={dayjs(PRICE_INCREASE)
                   .tz("Asia/Manila")
@@ -56,7 +56,7 @@ export default function MarketingLayout({
                   .toDate()}
               />
               !
-            </span> */}
+            </span>
             Get up to
             <span className="font-bold uppercase">₱50,000 discount</span>
             on our packages
@@ -69,7 +69,7 @@ export default function MarketingLayout({
             <span className="animate-bounce-left">👈</span>
           </div>
         }
-      />
+      /> */}
       <Navbar />
       {children}
       <Footer />
