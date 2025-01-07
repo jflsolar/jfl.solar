@@ -5,9 +5,9 @@ import Head from "next/head";
 import dayjs from "dayjs";
 import utc from "dayjs/plugin/utc";
 import timezone from "dayjs/plugin/timezone";
-import Link from "next/link";
-import { PRICE_INCREASE } from "@/constants/constant";
-import MarketingBanner from "@/components/shared/MarketingBanner";
+// import Link from "next/link";
+// import { PRICE_INCREASE } from "@/constants/constant";
+// import MarketingBanner from "@/components/shared/MarketingBanner";
 
 dayjs.extend(utc);
 dayjs.extend(timezone);
