@@ -70,12 +70,6 @@ export const JFLTeamMembers = [
     position: "CCO (Sales and Marketing)",
     description: `"A dynamic strategist driving business growth through effective sales initiatives and impactful marketing campaigns."`,
   },
-  {
-    imageUrl: "/team-jay.jpg",
-    name: "Jay Escander",
-    position: "CTO",
-    description: `"An innovative technical expert specializing in designing and implementing efficient and reliable solar PV systems."`,
-  },
 ];
 
 export const FeaturesData = [
